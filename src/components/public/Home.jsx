@@ -31,8 +31,8 @@ export default function Home() {
           <div className="profesion-box">
             <div className="profesion" style={estiloProfesion0}>
               <FontAwesomeIcon icon={faCode} ></FontAwesomeIcon>
-              <h3>Desarrollador web</h3>
-              <h3>full stack</h3>
+              <h3>Miguel Jarecca</h3>
+              <h3>Ccallo</h3>
             </div>
 
             <div className="profesion" style={estiloProfesion1}>
@@ -55,6 +55,8 @@ export default function Home() {
 
             <div className="circle"></div>
           </div>
+
+          <div className="overlay"></div>
         </div>
     </section>
   )

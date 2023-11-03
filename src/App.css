@@ -38,6 +38,12 @@ body {
   display: flex;
   align-items: center;
   z-index: 100;
+  transition: .5s;
+}
+
+.header.sticky {
+  background: var(--bg-color);
+  box-shadow: 0 .1rem 1rem var(--shadow-color);
 }
 
 .logo {
@@ -50,10 +56,18 @@ body {
 
 .navbar a {
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--white-color);
   font-weight: 500;
   margin-right: 3.5rem;
+}
+
+.header.sticky .navbar a {
+  color: var(--text-color);
+}
+
+.header.sticky .navbar a.active {
+  color: var(--main-color);
 }
 
 .navbar a.active::before {
@@ -66,10 +80,20 @@ body {
   background: var(--white-color);
 }
 
+.header.sticky .navbar a.active::before {
+  background: var(--main-color);
+  opacity: .7;
+}
+
 #darkMode-icon {
   font-size: 2.4rem;
   color: var(--white-color);
   cursor: pointer;
+}
+
+.header.sticky #darkMode-icon {
+  color: var(--text-color);
+  opacity: .9;
 }
 
 /* HOME SECTION STYLE  */
@@ -86,22 +110,22 @@ section {
 }
 
 .home .home-content {
-  max-width: 50rem;
-  background-color: aqua;
+  max-width: 45rem;
+  /* background-color: aqua; */
 }
 
 .home-content h1 {
-  font-size: 6.2rem;
+  font-size: 6.5rem;
   font-weight: 700;
-  line-height: .8; 
+  line-height: 1; 
 }
 
 .home .profesion-container {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: 0;
-  transform: translateY(-50%);
-  width: 650px;
+  /* transform: translateY(-50%); */
+  width: 750px;
   height: 650px;
   /* background-color: blue; */
   overflow: hidden;
@@ -112,7 +136,7 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  width: 650px;
+  width: 750px; /*entre dos para partir en 4*/
   height: 650px;
   /* background-color: purple; */
   border-radius: 50%;
@@ -123,7 +147,7 @@ section {
 
 .home .profesion-box .profesion {
   position: absolute;
-  left: 0;
+  left: 45px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -134,8 +158,18 @@ section {
   padding: 13px 0;
 }
 
+/* .home .profesion-box .profesion:nth-child(1) svg {
+  margin-right: 15px;
+} */
+
+.home .profesion-box .profesion:nth-child(2),
+.home .profesion-box .profesion:nth-child(4) { /*en dudas*/
+  padding-bottom: 20px;
+}
+
 .home .profesion svg {
   font-size: 2.8rem;
+  padding-bottom: 10px;
 }
 
 .home .profesion h3 {
@@ -151,3 +185,53 @@ section {
   border: 3px solid var(--main-color);
   border-radius: 50%;
 }
+
+.home .profesion-container .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 325px solid var(--main-color);
+  border-right: 325px solid var(--main-color);
+  border-bottom: 325px solid var(--main-color);
+  border-left: 420px solid transparent;
+}
+
+/* ABOUT SECTION STYLE  */
+
+span {
+  color: var(--main-color);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  /* background: red; */
+}
+
+.about-img img {
+  width: 35vw;
+}
+
+.heading {
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+/* PROYECTS SECTION STYLE  */
