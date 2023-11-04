@@ -1,47 +1,53 @@
 import React from 'react'
 import CardItem from './SkillsItem'
 
+import {faHtml5,faCss3Alt,faSquareJs} from '@fortawesome/free-brands-svg-icons';
+import {faBootstrap,faReact} from '@fortawesome/free-brands-svg-icons';
+
+import { faJava, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+
+import { faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 export default function Skills() {
 
-  const arrayIcons = [1,2,3];
+  const arrayIcons = [{icono:faHtml5, clase:'f-item html-icon'},
+                      {icono:faCss3Alt, clase:'f-item css-icon'},
+                      {icono:faSquareJs, clase:'f-item js-icon'},
+                      {icono:faBootstrap, clase:'f-item boostrap-icon'},
+                      {icono:faReact, clase:'f-item react-icon'}];
+
+  const backendIcons = [];
 
   return (
     <section className='skills'id='skills'>
-      <h2 className='titulo'>Habilidades</h2>
+      <h2 className='heading'>Mis <span>Habilidades</span></h2>
 
-      <h3>Frontend</h3>
+      <div className="skills-content">
 
-      <CardItem arrayIcons={arrayIcons}/>
+        <h3>Frontend</h3>
 
-  <h3>Backend</h3>
+        <CardItem arrayIcons={arrayIcons}/>
 
-  {/* <CardItem /> */}
+        <h3>Backend</h3>
 
-  {/* <div className='backend-div'>
 
-      <div className='b-item b-item-1'>#1</div>
-      <div className='b-item b-item-2'>#2</div>
-      <div className='b-item b-item-3'>#3</div>
-      <div className='b-item b-item-4'>#4</div>
-      <div className='b-item b-item-5'>#5</div>
-      <div className='b-item b-item-6'>#6</div>
 
-  </div> */}
+        <h3>Otros</h3>
 
-  <h3>Otros</h3>
+        {/* <CardItem /> */}
 
-  {/* <CardItem /> */}
+        {/* <div className='otros-div'>
 
-  {/* <div className='otros-div'>
+        <div className='o-item o-item-1'>#1</div>
+        <div className='o-item o-item-2'>#2</div>
+        <div className='o-item o-item-3'>#3</div>
+        <div className='o-item o-item-4'>#4</div>
+        <div className='o-item o-item-5'>#5</div>
+        <div className='o-item o-item-6'>#6</div>
 
-      <div className='o-item o-item-1'>#1</div>
-      <div className='o-item o-item-2'>#2</div>
-      <div className='o-item o-item-3'>#3</div>
-      <div className='o-item o-item-4'>#4</div>
-      <div className='o-item o-item-5'>#5</div>
-      <div className='o-item o-item-6'>#6</div>
+        </div>         */}
+      </div>
 
-  </div>         */}
     </section>
   )
 }
