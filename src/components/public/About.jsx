@@ -23,8 +23,9 @@ export default function About() {
       <div className="about-content">
         <h2 className="heading">Sobre <span>Mí</span></h2>
         <h3>Hola, Estoy aqui para ayudarte en tu proximo proyecto</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Sapiente consequuntur dolorem dolore impedit, rem necessitatibus?</p>
+        <p>Soy Miguel Jarecca Ccallo desarrollador de aplicaciones web con 
+          conocimientos en <span>back-end</span> y <span>front-end</span>.
+        </p>
 
         <div className="social-media">
           <a href="#" ><FontAwesomeIcon icon={faFacebookF}/></a>  

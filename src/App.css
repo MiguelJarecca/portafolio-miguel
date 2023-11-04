@@ -218,6 +218,7 @@ span {
 
 .heading {
   font-size: 4.5rem;
+  text-align: center;
 }
 
 .about-content h2 {
@@ -256,3 +257,126 @@ span {
 }
 
 /* PROYECTS SECTION STYLE  */
+
+.proyect {
+  width: 70%;
+  height: 30vw;
+  margin: left;
+  outline: 2px solid;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas: 
+  "element1 element1 element2 element2"
+  "element1 element1 element3 element4"
+  "element5 element5 element6 element4";
+
+  gap: 10px;
+}
+
+.item {
+  /* width: 100px; */
+  /* height: 100px; */
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-1 {
+  background-color: slateblue;
+  grid-area: element1;
+}
+
+.item-2 {
+  background-color: deeppink;
+  grid-area: element2;
+}
+
+.item-3 {
+  background-color: seagreen;
+  grid-area: element3;
+}
+
+.item-4 {
+  background-color: brown;
+  grid-area: element4;
+}
+
+.item-5 {
+  background-color: cornflowerblue;
+  grid-area: element5;
+}
+
+.item-6 {
+  background-color: purple;
+  grid-area: element6;
+}
+
+/* SKILLS SECTION STYLE  */
+
+.skills {
+  width: 70%;
+  height: 600px;
+  border: 2px solid;
+  margin: auto;
+}
+
+.skills h3 {
+  color: #642a73; 
+  border-left: 4px solid rgb(162, 0, 255);
+  padding-left: 10px;
+  margin: 20px 0 30px 0;
+}
+
+.front-div {
+  border: 2px solid;
+  margin: auto;
+  
+  display: flex;
+
+  gap: 10px;
+}
+
+.f-item {
+  width: 90px;
+  height: 90px; 
+  color: #fff;
+  font-size: 2em;
+  display: flex; /* Es para activar los de abajo*/
+  align-items: center;
+  justify-content: center;
+}
+
+.f-item-1 {
+  background-color: slateblue;
+  /* grid-area: element1; */
+}
+
+.f-item-2 {
+  background-color: deeppink;
+  /* grid-area: element2; */
+}
+
+.f-item-3 {
+  background-color: seagreen;
+  /* grid-area: element3; */
+}
+
+.f-item-4 {
+  background-color: brown;
+  /* grid-area: element4; */
+}
+
+.f-item-5 {
+  background-color: cornflowerblue;
+  /* grid-area: element5; */
+}
+
+.f-item-6 {
+  background-color: purple;
+  /* grid-area: element6; */
+}    
