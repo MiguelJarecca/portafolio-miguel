@@ -282,7 +282,6 @@ span {
 }
 
 .proyects-slide h3 {
-  text-align: left;
   font-size: 2.5rem;
   color: var(--main-color);
 }
@@ -292,67 +291,56 @@ span {
   margin: 2rem 0 3rem;
 }
 
-
-
-
-/*---------------------------*/
-
-.proyect {
-  width: 70%;
-  height: 30vw;
-  margin: left;
-  outline: 2px solid;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-
-  grid-template-areas: 
-  "element1 element1 element2 element2"
-  "element1 element1 element3 element4"
-  "element5 element5 element6 element4";
-
+.proyects-slide .technologies {
+  display: flex;
+  margin-right: auto;
   gap: 10px;
 }
 
-.item {
-  /* width: 100px; */
-  /* height: 100px; */
-  color: #fff;
-  font-size: 2em;
+.proyects-slide .technologies-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 2px;
+  padding: 4px 8px;
+  background: #d6d2d2;
+  gap: 10px;
 }
 
-.item-1 {
-  background-color: slateblue;
-  grid-area: element1;
+.proyects-slide .technologies svg {
+  font-size: 1.5rem;
 }
 
-.item-2 {
-  background-color: deeppink;
-  grid-area: element2;
+.proyects-slide .technologies span {
+  font-size: 1.2rem;
 }
 
-.item-3 {
-  background-color: seagreen;
-  grid-area: element3;
+.proyects-slide .technologies-icons:nth-child(1) {
+  color: red;
+}  
+
+.proyects-slide .technologies-icons:nth-child(2) {
+  color: blue;
+}  
+
+.proyects-slide .technologies-icons:nth-child(3) {
+  color: yellow;
+}  
+
+.proyects-slide .technologies-icons:nth-child(4) {
+  color: #0fa2eb;
+}  
+
+.proyects-slide .proyect-link {
+  width: 100%;
+  background: var(--main-color);
+  text-align: center;
+  padding: .8rem;
+  border-radius: 4px;
+  margin-top: 3rem;
 }
 
-.item-4 {
-  background-color: brown;
-  grid-area: element4;
-}
-
-.item-5 {
-  background-color: cornflowerblue;
-  grid-area: element5;
-}
-
-.item-6 {
-  background-color: purple;
-  grid-area: element6;
+.proyects-slide .proyect-link a {
+  font-size: 1.6rem;
+  color: var(--white-color);
 }
 
 /* =============== SKILLS SECTION STYLE ===============  */
