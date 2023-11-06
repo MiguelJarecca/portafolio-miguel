@@ -258,6 +258,45 @@ span {
 
 /* PROYECTS SECTION STYLE  */
 
+.proyects .proyects-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 5rem;
+}
+
+.proyects-wrapper .proyects-content {
+  display: flex;
+  gap: 30px;
+}
+
+.proyects-content .proyects-slide {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: var(--bg-color);
+   border-radius: 2rem;
+   box-shadow: 0 .1rem .5rem var(--shadow-color);
+   padding: 3rem 5rem;
+   border-top: .8rem solid var(--main-color);
+   border-bottom: .8rem solid var(--main-color);
+}
+
+.proyects-slide h3 {
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.proyects-slide p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+
+
+
+/*---------------------------*/
+
 .proyect {
   width: 70%;
   height: 30vw;
@@ -330,7 +369,7 @@ span {
   font-size: 2rem;
   border-left: 5px solid var(--main-color);
   padding-left: 15px;
-  margin: 20px 0 30px 0;
+  margin: 21px 0 21px 0;
 }
 
 .front-div {
@@ -343,8 +382,8 @@ span {
 }
 
 .f-item {
-  width: 90px;
-  height: 90px; 
+  width: 80px;
+  height: 80px; 
   /* color: red; */
   font-size: 6rem;
   display: flex; /* Es para activar los de abajo*/
@@ -373,3 +412,19 @@ span {
 .front-div .react-icon {
   color: rgb(0, 170, 255);
 }
+
+.java-icon {
+  font-family: 'Font Awesome 5 Fre';
+  color: #0fa2eb;
+}
+
+/* .java-icon::before {
+  font-family: 'Font Awesome 5 Fre';
+  content: '\f4e4';  Código del carácter para la parte superior del icono (fuego) 
+  color: #ff0000;
+} */
+
+.nodeJs-icon {
+  color: green;
+}
+

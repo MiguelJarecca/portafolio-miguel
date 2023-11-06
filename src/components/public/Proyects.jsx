@@ -5,15 +5,46 @@ export default function Proyects() {
     <section className='proyects' id='proyects'>
         <h2 className='heading'>Mis <span>Proyectos</span></h2>
 
-        <div className='proyect'>
+        <div className='proyects-wrapper'>
+          <div className="proyects-box">
+            <div className="proyects-content">
 
-            <div className='item item-1'>#1</div>
-            <div className='item item-2'>#2</div>
-            <div className='item item-3'>#3</div>
-            <div className='item item-4'>#4</div>
-            <div className='item item-5'>#5</div>
-            <div className='item item-6'>#6</div>
+              <div className="proyects-slide">
+                <h3>Red Social Fashion</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur 
+                  adipisicing elit. Ducimus provident, quos 
+                  ipsam soluta reprehenderit commodi exercitationem
+                   deleniti nobis illum eaque!</p>
 
+                <div className="technologies">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div className="proyect-link">
+                  <a href="#">Link</a>
+                </div>
+
+              </div>
+
+              <div className="proyects-slide">
+                <h3>Red Social Fashion</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur 
+                  adipisicing elit. Ducimus provident, quos 
+                  ipsam soluta reprehenderit commodi exercitationem
+                   deleniti nobis illum eaque!</p>
+
+                <div className="technologies">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div className="proyect-link">
+                  <a href="#">Link</a>
+                </div>
+
+              </div>
+                            
+            </div>
+          </div>
         </div>
     </section>
   )

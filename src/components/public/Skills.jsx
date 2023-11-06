@@ -16,36 +16,19 @@ export default function Skills() {
                       {icono:faBootstrap, clase:'f-item boostrap-icon'},
                       {icono:faReact, clase:'f-item react-icon'}];
 
-  const backendIcons = [];
+  const backendIcons = [{icono:faJava, clase:'f-item java-icon'},
+                        {icono:faNodeJs, clase:'f-item nodeJs-icon'}];
+
+  const othersIcons = [{icono:faGit, clase:'f-item git-icon'},
+                       {icono:faGithub, clase:'f-item gitHub-icon'}];                        
 
   return (
     <section className='skills'id='skills'>
       <h2 className='heading'>Mis <span>Habilidades</span></h2>
 
       <div className="skills-content">
-
-        <h3>Frontend</h3>
-
-        <CardItem arrayIcons={arrayIcons}/>
-
-        <h3>Backend</h3>
-
-
-
-        <h3>Otros</h3>
-
-        {/* <CardItem /> */}
-
-        {/* <div className='otros-div'>
-
-        <div className='o-item o-item-1'>#1</div>
-        <div className='o-item o-item-2'>#2</div>
-        <div className='o-item o-item-3'>#3</div>
-        <div className='o-item o-item-4'>#4</div>
-        <div className='o-item o-item-5'>#5</div>
-        <div className='o-item o-item-6'>#6</div>
-
-        </div>         */}
+        <CardItem arrayIcons={arrayIcons} backendIcons={backendIcons} 
+          othersIcons={othersIcons}/>
       </div>
 
     </section>
