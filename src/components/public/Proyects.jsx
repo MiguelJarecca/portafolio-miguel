@@ -26,12 +26,15 @@ export default function Proyects() {
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faHtml5}/>
                   <span>HTML5</span></div>
+
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faCss3Alt}/>
                   <span>CSS3</span></div>
+
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faSquareJs}/>
                   <span>Javascript</span></div>
+                  
                   <div className="technologies-icons">
                   <FontAwesomeIcon icon={faJava}/>
                   <span>Java</span></div>
@@ -54,12 +57,15 @@ export default function Proyects() {
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faHtml5}/>
                   <span>HTML5</span></div>
+
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faCss3Alt}/>
                   <span>CSS3</span></div>
+
                   <div className="technologies-icons"> 
                   <FontAwesomeIcon icon={faSquareJs}/>
                   <span>Javascript</span></div>
+
                   <div className="technologies-icons">
                   <FontAwesomeIcon icon={faJava}/>
                   <span>Java</span></div>

@@ -214,6 +214,12 @@ span {
 
 .about-img img {
   width: 35vw;
+  background: var(--bg-color);
+  border-radius: 2rem;
+  box-shadow: 0 .1rem .5rem var(--shadow-color);
+  padding: 1rem;
+  border: .8rem solid var(--main-color);
+  /* border-bottom: .8rem solid var(--main-color); */
 }
 
 .heading {
@@ -416,3 +422,58 @@ span {
   color: green;
 }
 
+/* =============== CONTACT SECTION STYLE ===============  */
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: .8rem;
+  margin: .7rem 0;
+  box-shadow: 0 .1rem .5rem var(--shadow-color);
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form .btn {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  background: var(--main-color);
+  border-radius: .6rem;
+  box-shadow: 0 .2rem .5rem var(--shadow-color);
+  font-size: 1.6rem;
+  color: var(--white-color);
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.contact form .btn:hover {
+  background: transparent;
+  color: var(--main-color);
+}
