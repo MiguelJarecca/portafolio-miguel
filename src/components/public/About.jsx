@@ -9,10 +9,7 @@ import {faGithubAlt} from '@fortawesome/free-brands-svg-icons';
 
 export default function About() {
 
-    window.onscroll = () => {
-        let header = document.querySelector('.header');
-        header.classList.toggle('sticky', window.scrollY > 100);
-    };
+
 
   return (
     <section className='about' id='about'>

@@ -5,8 +5,6 @@ import {faHtml5,faCss3Alt,faSquareJs,faJava} from '@fortawesome/free-brands-svg-
 
 export default function Proyects() {
 
-
-
   return (
     <section className='proyects' id='proyects'>
         <h2 className='heading'>Mis <span>Proyectos</span></h2>
