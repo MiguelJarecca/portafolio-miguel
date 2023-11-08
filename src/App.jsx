@@ -7,7 +7,20 @@ import Skills from './components/public/Skills'
 import Contact from './components/public/Contact'
 import Footer from './components/public/Footer'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faX } from '@fortawesome/free-solid-svg-icons'
+
 function App() {
+
+  //menu icon navbar
+  // let menuIcon = document.querySelector('#menu-icon');
+  // const menuIcon = <FontAwesomeIcon icon={faX} />;
+  // let navbar = document.querySelector('navbar');
+
+  // menuIcon.onclick = () => {
+  //   menuIcon.classList.toggle('faX');
+  //   navbar.classList.toggle('active');
+  // }
 
   // scroll section active liks 
   let sections = document.querySelectorAll('section');
