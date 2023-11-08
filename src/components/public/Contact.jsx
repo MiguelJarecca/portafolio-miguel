@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
   return (
     <section className='contact' id='contact'>
-      <h2 className="heading">Contactame</h2>
+      <h2 className="heading">Contacta<span>me</span></h2>
 
       <form action='#'>
         <div className="input-box">
@@ -16,7 +16,7 @@ export default function Contact() {
             <input type='email' placeholder='Email Subjet'></input>
         </div>
 
-        <textarea name='' id='' cols="30" rows="10" placeholder='Mensaje'></textarea>
+        <textarea name='' id='' cols="25" rows="7" placeholder='Mensaje'></textarea>
 
         <input type='submit' value="Enviar Mensaje" className='btn'></input>
       </form>

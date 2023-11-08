@@ -21,7 +21,8 @@ export default function About() {
         <h2 className="heading">Sobre <span>Mí</span></h2>
         <h3>Hola, Estoy aqui para ayudarte en tu proximo proyecto</h3>
         <p>Soy Miguel Jarecca Ccallo desarrollador de aplicaciones web con 
-          conocimientos en <span>back-end</span> y <span>front-end</span>.
+          conocimientos en <span> <strong>back-end</strong> </span> y 
+          <span> <strong>front-end</strong> </span>.
         </p>
 
         <div className="social-media">

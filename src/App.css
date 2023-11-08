@@ -60,6 +60,7 @@ body {
   color: var(--white-color);
   font-weight: 500;
   margin-right: 3.5rem;
+  text-decoration: none;
 }
 
 .header.sticky .navbar a {
@@ -449,13 +450,14 @@ span {
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
-  padding: 1.2rem;
+  padding: 1rem;
   font-size: 1.6rem;
   color: var(--text-color);
   background: var(--bg-color);
+  border: none;
   border-radius: .8rem;
   margin: .7rem 0;
-  box-shadow: 0 .1rem .5rem var(--shadow-color);
+  box-shadow: 0 .1rem .5rem var(--main-color);
 }
 
 .contact form .input-box input {
@@ -464,14 +466,20 @@ span {
 
 .contact form textarea {
   resize: none;
+  border: none;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  outline: none;
 }
 
 .contact form .btn {
   display: inline-block;
-  padding: 1.2rem 2.8rem;
+  padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: .6rem;
-  box-shadow: 0 .2rem .5rem var(--shadow-color);
+  box-shadow: 0 .2rem .5rem var(--main-color);
   font-size: 1.6rem;
   color: var(--white-color);
   letter-spacing: .1rem;
@@ -504,6 +512,28 @@ span {
   font-size: 1.5rem;
   color: var(--white-color);
 }
+
+.footer-icon svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem 1rem;
+  background: var(--white-color);
+  border-radius: .8rem;
+  border: .2rem solid var(--main-color);
+  outline: .2rem solid transparent; 
+  transition: .5s ease;
+}
+
+.footer-icon svg:hover {
+  outline-color: var(--white-color);
+}
+
+.footer-icon a {
+  font-size: 2.4rem;
+  color: var(--main-color)
+}
+
 
 /* BREACKPOINTS */
 
