@@ -103,7 +103,7 @@ body {
   opacity: .9;
 }
 
-/* HOME SECTION STYLE  */
+/* =============== HOME SECTION STYLE =============== */
 
 section {
   min-height: 100vh;
@@ -209,7 +209,7 @@ section {
   border-left: 375px solid transparent
 }
 
-/* ABOUT SECTION STYLE  */
+/* =============== ABOUT SECTION STYLE =============== */
 
 span {
   color: var(--main-color);
@@ -273,17 +273,18 @@ span {
   color: var(--white-color);
 }
 
-/* PROYECTS SECTION STYLE  */
+/* =============== PROYECTS SECTION STYLE =============== */
 
 .proyects .proyects-wrapper {
   position: relative;
-  width: 100%;
+  max-width: 50%;
   padding: 5rem;
 }
 
 .proyects-wrapper .proyects-content {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
   gap: 30px;
 }
 

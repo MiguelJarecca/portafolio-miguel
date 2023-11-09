@@ -12,6 +12,10 @@ export default function Header() {
     setMenuOpen(!menuOpen)
   };
 
+  const handleSectionClick = () => {
+    setMenuOpen(!menuOpen)
+  };
+
   return (
     <header className='header'>
         <a href="#" className="logo"> Portafolio</a>
@@ -30,11 +34,11 @@ export default function Header() {
         Si menuOpen es false, la cadena resultante será una cadena vacía "". */}
         
         <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
-            <a href="#home" className='active'>Inicio</a>
-            <a href="#about">Sobre mí</a>
-            <a href="#proyects">Proyectos</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#contact">Contactame</a>
+            <a href="#home" className='active' onClick={handleSectionClick} >Inicio</a>
+            <a href="#about" onClick={handleSectionClick} >Sobre mí</a>
+            <a href="#proyects" onClick={handleSectionClick} >Proyectos</a>
+            <a href="#skills" onClick={handleSectionClick} >Habilidades</a>
+            <a href="#contact" onClick={handleSectionClick} >Contactame</a>
         </nav>      
       
         <div className="bx bx-moon" id='darkMode-icon'>
