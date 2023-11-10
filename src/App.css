@@ -275,16 +275,14 @@ span {
 
 /* =============== PROYECTS SECTION STYLE =============== */
 
-.proyects .proyects-wrapper {
-  position: relative;
-  max-width: 50%;
-  padding: 5rem;
+.proyects .proyects-box {
+  /* position: relative; */
+  max-width: 100%;
+  padding: 5rem 0;
 }
 
 .proyects-wrapper .proyects-content {
   display: flex;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
   gap: 30px;
 }
 
@@ -597,6 +595,12 @@ span {
 
   .home .profesion-container .overlay {
     right: -39.5rem;
+  }
+
+  .proyects-wrapper .proyects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .contact {
