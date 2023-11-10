@@ -26,10 +26,10 @@ export default function Skills() {
     <section className='skills'id='skills'>
       <h2 className='heading'>Mis <span>Habilidades</span></h2>
 
-      <div className="skills-content">
+      {/* <div className="skills-content"> */}
         <CardItem arrayIcons={arrayIcons} backendIcons={backendIcons} 
           othersIcons={othersIcons}/>
-      </div>
+      {/* </div> */}
 
     </section>
   )

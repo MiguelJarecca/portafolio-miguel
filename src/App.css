@@ -674,7 +674,7 @@ span {
   }
 
   .home .profesion-container .profesion-box {
-    position: fixed;
+    /* position: fixed; */
     top: 60%;
     left: 0;
     border-radius: 0;
@@ -708,7 +708,7 @@ span {
   }
 
   .home .profesion-box .circle {
-    position: fixed;
+    /* position: fixed; */
     top: 68%;
     /* width: 487px;
     height: 487px; */
@@ -716,11 +716,53 @@ span {
   }
 
   .home .profesion-container .overlay {
-    position: fixed;
+    /* position: fixed; */
     top: 90%;
-    left: 50%;
+    left: 48.7%;
     right: 0;
     transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
     border-width: 23.9rem;
   }
+}
+
+@media (max-width: 740px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 60vw;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .skills {
+    /* overflow: auto; */
+    min-height: 120vh;
+  }
+
+  .front-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+    #darkMode-icon {
+      right: 6rem;
+    }
+
+    /* .home {
+      padding: 0 3% ;
+    } */
 }
