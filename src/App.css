@@ -762,7 +762,59 @@ span {
       right: 6rem;
     }
 
-    /* .home {
-      padding: 0 3% ;
-    } */
+    .home {
+      padding: 0 3% 24rem;
+    }
+
+    .home .profesion-box .circle {
+      width: 430px;
+      height: 430px;
+    }
+
+    .home .profesion-box .profesion:nth-child(2) {
+      padding-bottom: 0px;
+      transform: rotate(0deg) translate(0, -212px);
+    }
+
+    .proyects-slide .technologies {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .contact form .input-box input {
+      width: 100%;
+    }
+}
+
+@media (max-width: 404px) {
+  .about-img img {
+    width: 80vw;
+  }
+
+  .home .home-content h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .home .profesion-box .circle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .home .profesion-box .profesion:nth-child(2) {
+    padding-bottom: 0px;
+    transform: rotate(0deg) translate(0, -200px);
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 1.2rem;
+  }
+
+
 }
