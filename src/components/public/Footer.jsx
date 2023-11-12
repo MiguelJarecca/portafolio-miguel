@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-icon">
-        <a href=""> <FontAwesomeIcon icon= {faArrowUp}>icon</FontAwesomeIcon></a>
+        <a href="/"> <FontAwesomeIcon icon= {faArrowUp}>icon</FontAwesomeIcon></a>
       </div>
     </footer>
   )

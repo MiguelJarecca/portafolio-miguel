@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <section className='home' id='home'>
         <div className="home-content">
-            <h1>Desarrollador web Full Stack</h1>
+            <h1>Desarrollador Web Full Stack</h1>
         </div>
 
         <div className="profesion-container">
