@@ -16,6 +16,12 @@
   --shadow-color: rgba(0, 0, 0, .2);
 }
 
+.dark-mode {
+  --bg-color: #0b061f;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, .7);
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -482,7 +488,7 @@ span {
 
 .contact form .btn {
   display: inline-block;
-  padding: 1rem 2.8rem;
+  padding: .7rem 2.8rem;
   background: var(--main-color);
   border-radius: .6rem;
   box-shadow: 0 .2rem .5rem var(--main-color);
@@ -510,7 +516,7 @@ span {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem 7%;
+  padding: 1rem 7%;
   background: var(--main-color);
 }
 

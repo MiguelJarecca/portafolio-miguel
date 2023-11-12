@@ -1,11 +1,12 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faMoon} from '@fortawesome/free-regular-svg-icons'
+import {faMoon, faSun} from '@fortawesome/free-regular-svg-icons'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
 
 export default function Header() {
 
+  //============== Menu ============
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -16,6 +17,21 @@ export default function Header() {
     setMenuOpen(!menuOpen)
   };
 
+  //============== Dark Theme ============
+ const [darkTheme, setDarkTheme] = useState(false);
+
+  const handleThemeClick = () => {
+    setDarkTheme(!darkTheme)
+  };
+
+  useEffect(() => {
+    if (darkTheme) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkTheme]); 
+ 
   //============== scroll section active liks =============
   let sections = document.querySelectorAll('section');
   let navLinks = document.querySelectorAll('header nav a')
@@ -43,7 +59,7 @@ export default function Header() {
 
   return (
     <header className='header'>
-        <a href="#" className="logo"> Portafolio</a>
+        <a href="/" className="logo"> Portafolio</a>
 
         {/* Esta línea utiliza una técnica de plantillas de cadena (template literals)
          en JavaScript para condicionalmente agregar la clase "active" al elemento <div> 
@@ -66,8 +82,8 @@ export default function Header() {
             <a href="#contact" onClick={handleSectionClick} >Contactame</a>
         </nav>      
       
-        <div className="bx bx-moon" id='darkMode-icon'>
-            <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+        <div className="bx bx-moon" id='darkMode-icon' onClick={handleThemeClick}>
+            <FontAwesomeIcon icon={darkTheme ? faSun : faMoon}></FontAwesomeIcon>
         </div>
         
         <div className="bx bx-menu" id='menu-icon' onClick={handleMenuClick}>
