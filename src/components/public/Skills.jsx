@@ -5,6 +5,7 @@ import {faHtml5,faCss3Alt,faSquareJs} from '@fortawesome/free-brands-svg-icons';
 import {faBootstrap,faReact} from '@fortawesome/free-brands-svg-icons';
 
 import { faJava, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+// import JavaIcon from './icons/java.svg';
 
 import { faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,7 +18,8 @@ export default function Skills() {
                       {icono:faReact, clase:'f-item react-icon'}];
 
   const backendIcons = [{icono:faJava, clase:'f-item java-icon'},
-                        {icono:faNodeJs, clase:'f-item nodeJs-icon'}];
+                        {icono:faNodeJs, clase:'f-item nodeJs-icon'},
+/*{icono:JavaIcon, clase:'f-item javac-icon'}*/];
 
   const othersIcons = [{icono:faGit, clase:'f-item git-icon'},
                        {icono:faGithub, clase:'f-item gitHub-icon'}];                        
