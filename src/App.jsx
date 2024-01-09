@@ -1,12 +1,13 @@
 import './App.css'
+import Header from './components/Header'
+import Home from './components/Home'
 
 function App() {
 
   return (
     <>
-      <p>
-        Click on the Vite and React logos to learn more migel
-      </p>
+      <Header />
+      <Home />
     </>
   )
 }
