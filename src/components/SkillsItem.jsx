@@ -15,14 +15,20 @@ export default function SkillsItem({arrayIcons, backendIcons, othersIcons}) {
         <div 
             key={index} 
             className={backItem.clase}>
-            <FontAwesomeIcon icon={backItem.icono}/>
+                {React.isValidElement(backItem.icono) 
+                ? backItem.icono
+                : <FontAwesomeIcon icon={backItem.icono}/>}
+            
         </div>)    
   
     let othersItems = othersIcons.map((otherItem, index) => 
         <div 
             key={index} 
             className={otherItem.clase}>
-            <FontAwesomeIcon icon={otherItem.icono}/>
+                {React.isValidElement(otherItem.icono) 
+                ? otherItem.icono
+                : <FontAwesomeIcon icon={otherItem.icono}/>}
+            
         </div>)
 
   return (
@@ -35,13 +41,13 @@ export default function SkillsItem({arrayIcons, backendIcons, othersIcons}) {
 
         <h3>Backend</h3>
 
-            <div className='front-div'>
+            <div className='back-div'>
                 {backendItems}
             </div>
 
         <h3>Otros</h3>
 
-            <div className='front-div'>
+            <div className='other-div'>
                 {othersItems}
             </div>
     

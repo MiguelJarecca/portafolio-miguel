@@ -231,7 +231,7 @@ span {
 }
 
 .about-img img {
-  width: 35vw;
+  width: 30vw;
   background: var(--bg-color);
   border-radius: 2rem;
   box-shadow: 0 .1rem .5rem var(--shadow-color);
@@ -387,9 +387,19 @@ span {
 .front-div {
   /* border: 2px solid; */
   margin: auto;
-  
   display: flex;
+  gap: 20px;
+}
 
+.back-div {
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.other-div {
+  margin: auto;
+  display: flex;
   gap: 20px;
 }
 
@@ -422,22 +432,40 @@ span {
 }
 
 .front-div .react-icon {
-  color: rgb(0, 170, 255);
+  color: #339AF0;
 }
 
-.java-icon {
+/* .java-icon {
   font-family: 'Font Awesome 5 Fre';
   color: #0fa2eb;
-}
-
-/* .java-icon::before {
-  font-family: 'Font Awesome 5 Fre';
-  content: '\f4e4';  Código del carácter para la parte superior del icono (fuego) 
-  color: #ff0000;
 } */
 
-.nodeJs-icon {
-  color: green;
+.java-icon {
+  color: #8B4513; /* Color para la base (café) */
+}
+
+.java-icon::before {
+  color: #00ff0d; /* Color para el fuego */
+}
+
+.back-div .siSpring-icon {
+  color: #6db33f;
+}
+
+ .back-div .nodeJs-icon {
+  color: #339933;
+}
+
+.back-div .siMySql-icon {
+  color: #00758f
+}
+
+.back-div .siSpringSecurity-icon {
+  color: #6db33f;
+}
+
+.other-div .siVisualStudioCode-icon {
+  color: #007ACC;
 }
 
 /* =============== CONTACT SECTION STYLE ===============  */
