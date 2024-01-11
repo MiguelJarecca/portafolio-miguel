@@ -37,20 +37,20 @@ export default function Home() {
 
         <div className="profesion" style={estiloProfesion1}>
           <FontAwesomeIcon icon={faCode} ></FontAwesomeIcon>
-          <h3>Desarrollador web</h3>
-          <h3>full stack</h3>
+          <h3>Miguel Jarecca</h3>
+          <h3>Ccallo</h3>
         </div>
 
         <div className="profesion" style={estiloProfesion2}>
           <FontAwesomeIcon icon={faCode} ></FontAwesomeIcon>
-          <h3>Desarrollador web</h3>
-          <h3>full stack</h3>
+          <h3>Miguel Jarecca</h3>
+          <h3>Ccallo</h3>
         </div>
 
         <div className="profesion" style={estiloProfesion3}>
           <FontAwesomeIcon icon={faCode} ></FontAwesomeIcon>
-          <h3>Desarrollador web</h3>
-          <h3>full stack</h3>
+          <h3>Miguel Jarecca</h3>
+          <h3>Ccallo</h3>
         </div>
 
         <div className="circle"></div>

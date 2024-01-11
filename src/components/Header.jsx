@@ -60,7 +60,7 @@ export default function Header() {
 
   return (
     <header className='header'>
-    <a href="/" className="logo"> Portafolio</a>
+    <a href="#home" className="logo"> Portafolio</a>
 
     {/* Esta línea utiliza una técnica de plantillas de cadena (template literals)
      en JavaScript para condicionalmente agregar la clase "active" al elemento <div> 
