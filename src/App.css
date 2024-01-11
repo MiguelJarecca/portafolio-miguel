@@ -487,6 +487,24 @@ span {
   flex-wrap: wrap;
 }
 
+.contact form .input-cont {
+  display: flex;
+  flex-direction: column;
+  width: 48.5%;
+  align-items: flex-start;
+}
+
+.contact form span {
+  color: red;
+}
+
+.contact form .div-textarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .contact form .input-box input,
 .contact form textarea {
   width: 100%;
@@ -501,7 +519,7 @@ span {
 }
 
 .contact form .input-box input {
-  width: 49%;
+  width: 100%;
 }
 
 .contact form textarea {
@@ -553,26 +571,26 @@ span {
   color: var(--white-color);
 }
 
-.footer-icon svg {
+/* svg {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: .8rem 1rem;
-  background: var(--white-color);
+  padding: 1rem 1rem;
+  background: red;
   border-radius: .8rem;
   border: .2rem solid var(--main-color);
   outline: .2rem solid transparent; 
   transition: .5s ease;
-}
+} */
 
-.footer-icon svg:hover {
+/* svg:hover {
   outline-color: var(--white-color);
-}
+} */
 
-.footer-icon a {
-  font-size: 2.4rem;
-  color: var(--main-color)
-}
+/* button {} */
+  /* font-size: 4.4rem; */
+  /* color: var(--main-color) */
+/* } */
 
 
 /* =============== BREACKPOINTS =============== */
@@ -833,6 +851,10 @@ span {
     }
 
     .contact form .input-box input {
+      width: 100%;
+    }
+
+    .contact form .input-cont {
       width: 100%;
     }
 }
