@@ -117,7 +117,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10rem 7% 2rem;
+  padding: 8rem 7% 0rem;
 }
 
 .home {
@@ -288,7 +288,7 @@ span {
 .proyects .proyects-box {
   /* position: relative; */
   max-width: 100%;
-  padding: 5rem 0;
+  padding: 2rem 0 0;
 }
 
 .proyects-wrapper .proyects-content {
@@ -313,7 +313,9 @@ span {
   color: var(--main-color);
 }
 
-.proyects-slide p {
+.proyects-slide .text-content {
+  width: 100%;
+  content: initial;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
@@ -353,8 +355,12 @@ span {
 }  
 
 .proyects-slide .technologies-icons:nth-child(4) {
-  color: #0fa2eb;
-}  
+  color: #8B4513;
+} 
+
+.proyects-slide .technologies-icons:nth-child(5) {
+  color: #339AF0;
+} 
 
 .proyects-slide .proyect-link {
   width: 100%;
@@ -372,11 +378,12 @@ span {
 
 /* =============== SKILLS SECTION STYLE ===============  */
 
-.skills-content {
+/* .skills-content {
   width: 100%;
   height: 35vw;
   margin: auto;
-}
+  background-color: red;
+} */
 
 .skills h3 {
   color: var(--text-color); 
@@ -621,7 +628,7 @@ span {
   }
 
   section {
-    padding: 10rem 3% 2rem;
+    padding: 8rem 3% 0rem;
   }
 
   .home .profesion-container .profesion-box {
