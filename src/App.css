@@ -425,6 +425,8 @@ span {
   box-shadow: 0 0 6px 0 rgba(117, 78, 249, 5);
 }
 
+/* ------ frontend ------ */
+
 .front-div .html-icon {
   color: red;
 }
@@ -450,6 +452,8 @@ span {
   color: #0fa2eb;
 } */
 
+/* ------ backend ------ */
+
 .java-icon {
   color: #8B4513; /* Color para la base (café) */
 }
@@ -472,6 +476,28 @@ span {
 
 .back-div .siSpringSecurity-icon {
   color: #6db33f;
+}
+
+/* ------ otros ------ */
+
+.other-div .docker-icon {
+  color: #2496ED;
+}
+
+.other-div .siKuberenetes-icon {
+  color: #326CE5;
+}
+
+.other-div .siSwagger-icon {
+  color: #85EA2D;
+}
+
+.other-div .gitHub-icon {
+  color: #181717
+}
+
+.other-div .siIntellijidea-icon {
+  color: #000;
 }
 
 .other-div .siVisualStudioCode-icon {
