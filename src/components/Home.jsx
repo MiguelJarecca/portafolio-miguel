@@ -27,6 +27,12 @@ export default function Home() {
         <h1>Desarrollador Web Full Stack</h1>
     </div>
 
+    <div>
+      <a href="/portafolio-miguel/MIGUEL-CV.pdf" download="MIGUEL-CV.pdf">
+        <button>📄 Descargar CV</button>
+      </a>
+    </div>
+
     <div className="profesion-container">
       <div className="profesion-box">
         <div className="profesion" style={estiloProfesion0}>
