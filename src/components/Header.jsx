@@ -60,14 +60,15 @@ export default function Header() {
 
   return (
 
-    <header>
+    <>
 
-      <nav className='header-nav'>
-        <h3>Construyo aplicaciones web escalables y eficientes </h3>
-
-      </nav>
+      {/* Encabezado */}
+      <header className="hero">
+        <h3>Construyo aplicaciones web escalables y eficientes</h3>
+      </header>
       
-      <section className='header-section'>
+      {/* Barra de navegación */}
+      <nav className='navbar'>
 
         <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
             <a href="#home" className='active' onClick={handleSectionClick} >Inicio</a>
@@ -77,16 +78,20 @@ export default function Header() {
             <a href="#contact" onClick={handleSectionClick} >Contactame</a>
         </div>      
       
-        <div className="bx bx-moon" id='darkMode-icon' onClick={handleThemeClick}>
-            <FontAwesomeIcon icon={darkTheme ? faSun : faMoon}></FontAwesomeIcon>
-        </div>
-        
-        <div className="bx bx-menu" id='menu-icon' onClick={handleMenuClick}>
-            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars}></FontAwesomeIcon>
-        </div>
-      </section>
+        {/* Controles de tema y menú */}
+        <div className="navbar-controls">
+          <button className="theme-toggle" onClick={handleThemeClick}>
+            <FontAwesomeIcon icon={darkTheme ? faSun : faMoon} />
+          </button>
 
-    </header>
+          <button className="menu-toggle" onClick={handleMenuClick}>
+            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
+          </button>
+        </div>
+
+      </nav>
+
+    </>
     
   )
 }

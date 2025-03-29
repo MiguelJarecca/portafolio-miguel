@@ -15,12 +15,12 @@
   --white-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, .2);
 }
-
+/* 
 .dark-mode {
   --bg-color: #0b061f;
   --text-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, .7);
-}
+} */
 
 html {
   font-size: 62.5%;
@@ -28,15 +28,44 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  /* background-color: var(--bg-color); */
+  /* color: var(--text-color); */
 }
 
 /* ================ HEADER SECTION STYLE ================= */
 
-.header-nav {
-  padding: 2rem;
-  background: white;
+.hero {
+  padding: 1rem 7%;
+  background: #fff7f2;
+}
+
+.hero h3 {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  padding: 2rem 7%;
+  background: #fff;
+  
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header-nav .div-links {
+
+}
+
+.navbar .navbar-links a {
+  position: relative;
+  font-size: 1.5rem;
+  /* color: var(--white-color); */
+  font-weight: 500;
+  margin-right: 3.5rem;
+  text-decoration: none;
+
 }
 
 /* .header {
@@ -124,11 +153,16 @@ body {
 /* section {
   min-height: 100vh;
   padding: 8rem 7% 0rem;
-}
+} */
 
 .home {
+  background-image: url(/images/bg-pattern.png);
+  background-color: #47529e;
+  background-blend-mode: multiply;
+
   display: flex;
   align-items: center;
+  padding: 4rem 7%;
 }
 
 .home .home-content {
@@ -139,7 +173,7 @@ body {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1; 
-} */
+}
 
 /* .home .profesion-container {
   position: absolute;
@@ -619,7 +653,7 @@ span {
 
 /* =============== BREACKPOINTS =============== */
 
-@media (max-width: 1230px) {
+/* @media (max-width: 1230px) {
   html {
     font-size: 55%;
   }
@@ -695,9 +729,9 @@ span {
   .footer {
     padding: 2rem 3%;
   }
-}
+} */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   #menu-icon {
     display: block;
   }
@@ -792,24 +826,20 @@ span {
   }
 
   .home .profesion-box .circle {
-    /* position: fixed; */
     top: 68%;
-    /* width: 487px;
-    height: 487px; */
     z-index: -1;
   }
 
   .home .profesion-container .overlay {
-    /* position: fixed; */
     top: 90%;
     left: 48.7%;
     right: 0;
     transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
     border-width: 23.9rem;
   }
-}
+} */
 
-@media (max-width: 740px) {
+/* @media (max-width: 740px) {
   .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -823,11 +853,10 @@ span {
     width: 60vw;
     margin-top: -2rem;
   }
-}
+} */
 
-@media (max-width: 530px) {
+/* @media (max-width: 530px) {
   .skills {
-    /* overflow: auto; */
     min-height: 120vh;
   }
 
@@ -835,9 +864,9 @@ span {
     display: flex;
     flex-wrap: wrap;
   }
-}
+} */
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
@@ -872,9 +901,9 @@ span {
     .contact form .input-cont {
       width: 100%;
     }
-}
+} */
 
-@media (max-width: 404px) {
+/* @media (max-width: 404px) {
   .about-img img {
     width: 80vw;
   }
@@ -882,9 +911,9 @@ span {
   .home .home-content h1 {
     font-size: 5.5rem;
   }
-}
+} */
 
-@media (max-width: 380px) {
+/* @media (max-width: 380px) {
   .home .profesion-box .circle {
     width: 400px;
     height: 400px;
@@ -905,4 +934,4 @@ span {
   }
 
 
-}
+} */
