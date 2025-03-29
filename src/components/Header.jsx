@@ -59,40 +59,34 @@ export default function Header() {
   };  
 
   return (
-    <header className='header'>
-    <a href="#home" className="logo"> Portafolio</a>
 
-    {/* Esta línea utiliza una técnica de plantillas de cadena (template literals)
-     en JavaScript para condicionalmente agregar la clase "active" al elemento <div> 
-     del menú dependiendo del valor de menuOpen. Te explico paso a paso lo que hace:
+    <header>
 
-    Las comillas invertidas `` se utilizan para crear una cadena de plantilla en 
-    JavaScript. Permite la interpolación de expresiones y variables usando ${}.
+      <nav className='header-nav'>
+        <h3>Construyo aplicaciones web escalables y eficientes </h3>
 
-    ${menuOpen ? 'active' : ''} es una expresión condicional (también conocida como 
-      operador ternario) en JavaScript. Significa lo siguiente:
+      </nav>
+      
+      <section className='header-section'>
 
-    Si menuOpen es true, la cadena resultante será "active".
-    Si menuOpen es false, la cadena resultante será una cadena vacía "". */}
-    
-    <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
-        <a href="#home" className='active' onClick={handleSectionClick} >Inicio</a>
-        <a href="#about" onClick={handleSectionClick} >Sobre mí</a>
-        <a href="#proyects" onClick={handleSectionClick} >Proyectos</a>
-        <a href="#skills" onClick={handleSectionClick} >Habilidades</a>
-        <a href="#contact" onClick={handleSectionClick} >Contactame</a>
-    </nav>      
-  
-    <div className="bx bx-moon" id='darkMode-icon' onClick={handleThemeClick}>
-        <FontAwesomeIcon icon={darkTheme ? faSun : faMoon}></FontAwesomeIcon>
-    </div>
-    
-    <div className="bx bx-menu" id='menu-icon' onClick={handleMenuClick}>
-        {/* El operador ternario (? :) es la estructura if-else  */}
-        {/* esta línea se traduce en palabras como: "Si menuOpen es true, muestra el 
-        ícono faTimes; de lo contrario, muestra el ícono faBars". */}
-        <FontAwesomeIcon icon={menuOpen ? faXmark : faBars}></FontAwesomeIcon>
-    </div>
+        <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+            <a href="#home" className='active' onClick={handleSectionClick} >Inicio</a>
+            <a href="#about" onClick={handleSectionClick} >Sobre mí</a>
+            <a href="#proyects" onClick={handleSectionClick} >Proyectos</a>
+            <a href="#skills" onClick={handleSectionClick} >Habilidades</a>
+            <a href="#contact" onClick={handleSectionClick} >Contactame</a>
+        </div>      
+      
+        <div className="bx bx-moon" id='darkMode-icon' onClick={handleThemeClick}>
+            <FontAwesomeIcon icon={darkTheme ? faSun : faMoon}></FontAwesomeIcon>
+        </div>
+        
+        <div className="bx bx-menu" id='menu-icon' onClick={handleMenuClick}>
+            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars}></FontAwesomeIcon>
+        </div>
+      </section>
+
     </header>
+    
   )
 }

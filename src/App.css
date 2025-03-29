@@ -32,9 +32,14 @@ body {
   color: var(--text-color);
 }
 
-/* HEADER SECTION STYLE  */
+/* ================ HEADER SECTION STYLE ================= */
 
-.header {
+.header-nav {
+  padding: 2rem;
+  background: white;
+}
+
+/* .header {
   position: fixed;
   top: 0;
   right: 0;
@@ -112,11 +117,11 @@ body {
 .header.sticky #darkMode-icon {
   color: var(--text-color);
   opacity: .9;
-}
+} */
 
 /* =============== HOME SECTION STYLE =============== */
 
-section {
+/* section {
   min-height: 100vh;
   padding: 8rem 7% 0rem;
 }
@@ -124,30 +129,24 @@ section {
 .home {
   display: flex;
   align-items: center;
-  /* background-color: red; */
 }
 
 .home .home-content {
   max-width: 45rem;
-  /* background-color: aqua; */
 }
 
 .home-content h1 {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1; 
-}
+} */
 
-.home .profesion-container {
+/* .home .profesion-container {
   position: absolute;
   top: 0;
   right: 0;
-  /* transform: translateY(-50%); */
   width: 750px;
   height: 100vh;
-  /* height: 650px; */
-  /* height: 564px; */
-  /* background-color: blue; */
   overflow: hidden;
   pointer-events: none;
 }
@@ -156,11 +155,8 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  width: 750px; /*entre dos para partir en 4*/
+  width: 750px;
   height: 100vh;
-  /* height: 564px; */
-  /* height: 650px; */
-  /* background-color: purple; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -178,14 +174,11 @@ section {
   transform-origin: 325px;
   background: var(--bg-color);
   padding: 13px 0;
-}
-
-/* .home .profesion-box .profesion:nth-child(1) svg {
-  margin-right: 15px;
 } */
 
+/* 
 .home .profesion-box .profesion:nth-child(2),
-.home .profesion-box .profesion:nth-child(4) { /*en dudas*/
+.home .profesion-box .profesion:nth-child(4) {
   padding-bottom: 20px;
 }
 
@@ -203,7 +196,6 @@ section {
 .home .circle {
   width: 487px;
   height: 487px;
-  /* background: red; */
   border: 3px solid var(--main-color);
   border-radius: 50%;
 }
@@ -218,7 +210,7 @@ section {
   border-right: 375px solid var(--main-color);
   border-bottom: calc(100vh /2) solid var(--main-color);
   border-left: 375px solid transparent
-}
+} */
 
 /* =============== ABOUT SECTION STYLE =============== */
 
