@@ -3,54 +3,45 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCode} from '@fortawesome/free-solid-svg-icons'
 
-import bgPattern from "../img/bg-pattern.png"
+import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
-
-    const estiloProfesion0 = {
-        '--i': 0, 
-      };
-  
-      const estiloProfesion1 = {
-        '--i': 1, 
-      };
-  
-      const estiloProfesion2 = {
-        '--i': 2, 
-      };
-  
-      const estiloProfesion3 = {
-        '--i': 3, 
-      };
 
   return (
 
     <section className='home' id='home'>
       <div className="home-content">
-          <h1>Desarrollador Web Full Stack</h1>
+          <h3>Hola, Soy</h3>
+          <h1>Miguel Jarecca</h1>
 
-          <div>
-            <a href="/portafolio-miguel/MIGUEL-CV.pdf" download="MIGUEL-CV.pdf">
-              <button>📄 Descargar CV</button>
+          <p>Transformando ideas en soluciones escalables.
+            Desarrollador Fullstack especializado en React, Java y Microservicios.</p>
+
+          <div className="social-media">
+            <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 
+               target="_blank">
+              <FontAwesomeIcon icon={faFacebookF}/></a>  
+            <a href="https://www.linkedin.com/in/migueljarecca"
+               target="_blank">
+              <FontAwesomeIcon icon={faLinkedinIn}/></a>  
+            <a href="https://github.com/MiguelJarecca" 
+               target="_blank">
+              <FontAwesomeIcon icon={faGithub}/></a>  
+          </div>   
+
+          
+            <a href="/portafolio-miguel/MIGUEL-CV.pdf" download="MIGUEL-CV.pdf" className='btn-cv'>
+              Desargar CV
             </a>
-          </div>
+          
       </div>
 
-    
-
-    <div className="profesion-container">
-      <div className="profesion-box">
-        <div className="profesion" style={estiloProfesion0}>
-          <FontAwesomeIcon icon={faCode} ></FontAwesomeIcon>
-          <h3>Miguel Jarecca</h3>
-          <h3>Ccallo</h3>
-        </div>
-
-        <div className="circle"></div>
+      <div className="profesion-container">
+        <div className="profesion-box">
+        </div>  
       </div>
-
-      <div className="overlay"></div>
-    </div>
     </section>
   )
 }

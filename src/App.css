@@ -48,10 +48,12 @@ body {
   background: #fff;
   
   display: flex;
-  
   align-items: center;
   justify-content: space-between;
 
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header-nav .div-links {
@@ -169,10 +171,64 @@ body {
   max-width: 45rem;
 }
 
+.home-content h3 {
+  font-size: 3.2rem;
+  font-size: 700;
+  line-height:.3;
+}
+
 .home-content h1 {
-  font-size: 6rem;
+  font-size: 5.6rem;
   font-weight: 700;
   line-height: 1; 
+  margin-bottom: .3rem;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+}
+
+.home-content .social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 .2rem .5rem #000;
+  font-size: 2rem;
+  color: #339AF0;
+  margin: 2.5rem 1.5rem 3rem 0;
+
+  transition: .5s ease;
+}
+
+.home-content .social-media a:hover {
+  background: #00ff0d;
+  color: #00758f;
+}
+
+.home-content .btn-cv {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  background: #00758f;
+  border-radius: 6px;
+  box-shadow: 0 .2rem .5rem #000;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  border: .2rem solid transparent;
+
+  transition: .5s ease;
+}
+
+.home-content .btn-cv:hover {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
 }
 
 /* .home .profesion-container {
