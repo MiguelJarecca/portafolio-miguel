@@ -180,7 +180,6 @@ body {
 .home-content h1 {
   font-size: 5.6rem;
   font-weight: 700;
-  line-height: 1; 
   margin-bottom: .3rem;
 }
 
@@ -302,13 +301,15 @@ body {
   border-left: 375px solid transparent
 } */
 
-/* =============== ABOUT SECTION STYLE =============== */
+/* ========================== ABOUT SECTION STYLE ========================== */
 
 span {
   color: var(--main-color);
 }
 
 .about {
+  padding: 4rem 7%;
+
   display: flex;
   justify-content: center;
   align-items: center;

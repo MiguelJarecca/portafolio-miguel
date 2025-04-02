@@ -23,19 +23,10 @@ export default function About() {
       </p>
 
       <div className="social-media">
-        <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 
-           target="_blank">
-          <FontAwesomeIcon icon={faFacebookF}/></a>  
-        <a href="https://www.linkedin.com/in/migueljarecca"
-           target="_blank">
-          <FontAwesomeIcon icon={faLinkedinIn}/></a>  
-        <a href="https://github.com/MiguelJarecca" 
-           target="_blank">
-          <FontAwesomeIcon icon={faGithub}/></a>  
+          
       </div>    
-      <div className="div-cv">
 
-      </div>
+      
     </div>
   </section>
   )
