@@ -334,7 +334,6 @@ span {
 
 .about-content h2 {
   text-align: left;
-  line-height: 1.2;
 }
 
 .about-content h3 {
@@ -343,28 +342,21 @@ span {
 
 .about-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  margin-top: 2rem;
 }
 
-.about .social-media a {
-  display: inline-flex;
+.about-content .about-link {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  background: transparent;
-  border: .2rem solid var(--main-color);
-  border-radius: 50%;
-  box-shadow: 0 .2rem .5rem var(--shadow-color);
-  font-size: 2.5rem;
-  color: var(--main-color);
-  margin: 2.5rem 1.5rem 3rem 0;
-  transition: .5s ease;
+  margin-top: 3rem;
 }
 
-.about .social-media a:hover {
-  background: var(--main-color);
-  color: var(--white-color);
+.about-content .about-link a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1rem 6rem;
+  background: #181717;
+  color: #fff;
 }
 
 /* =============== PROYECTS SECTION STYLE =============== */
