@@ -301,7 +301,7 @@ body {
   border-left: 375px solid transparent
 } */
 
-/* ========================== ABOUT SECTION STYLE ========================== */
+/* ============================ ABOUT SECTION STYLE =========================== */
 
 span {
   color: var(--main-color);
@@ -699,6 +699,95 @@ span {
   outline-color: var(--white-color);
   cursor: pointer;
 }
+
+/* ============================  COURSES PAGE =========================== */
+
+.main-courses-page {
+  padding: 2rem 7%;
+
+}
+/* ---------- course-list -----------*/
+
+.course-list {
+
+}
+
+.course-list h2 {
+  font-size: 3rem;
+}
+
+.course-list .course-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* ---------- course-card -----------*/
+
+.course-card {
+  display: flex;
+  border: solid #d1d2e0;
+  padding: 1rem;
+
+}
+
+.course-card .course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 30rem;
+
+}
+
+.course-content .course-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.course-content .course-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.course-content .course-info .course-title {
+  font-size: 1.6rem;
+  color: #303141;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.course-content .course-subtittle {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  color: #303141;
+  /* white-space: nowrap; */
+}
+
+.course-content .course-info .course-instructor {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  color: #303141;
+}
+
+.course-content .certi-button {
+  padding: .8rem;
+  font-size: 1.6;
+  font-weight: 400;
+}
+
+.courseCard .course-description {
+
+}
+
+.course-description h2 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
 
 /* =============== BREACKPOINTS =============== */
 

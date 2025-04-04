@@ -5,10 +5,10 @@ export const CoursesPage = () => {
 
 
     return(
-        <>
+        <main className="main-courses-page">
             <Header />
             <CourseList />
             
-        </>
+        </main>
     )
 }

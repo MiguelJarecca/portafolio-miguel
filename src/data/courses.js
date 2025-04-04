@@ -3,21 +3,21 @@
 const courses = [
   {
     id: 1,
-    title: "React - The Complete Guide",
-    image: "https://via.placeholder.com/300",
-    instructor: "Maximilian Schwarzmüller",
-    rating: 4.8,
-    reviews: 25000,
-    price: "$19.99"
+    title: "Master Microservices with SpringBoot,Docker,Kubernetes",
+    subtitle: "Learn & Develop Microservices with Java, Spring Boot, Spring Cloud, Docker, Kubernetes, Helm, Microservices Security",
+    imageCourse: "/images/courses/microservices-course.png",
+    instructor: "Eazy Bytes, Madan Reddy",
+    imageCerti: "/images/courses/certi-react-app-full-stack.jpg",
+
   },
   {
     id: 2,
-    title: "Java Spring Boot for Beginners",
-    image: "https://via.placeholder.com/300",
-    instructor: "John Doe",
-    rating: 4.7,
-    reviews: 18000,
-    price: "$14.99"
+    title: "React & Spring Boot: Creando Webapp Full Stack",
+    subtitle: "Construye aplicaciones web Fullstack con React 18 Frontend y Spring Boot 3 Backend RESTful, JPA, JWT, Hooks, Redux, AWS",
+    imageCourse: "/images/courses/react-spring-boot-course.png",
+    instructor: "Andrés Guzmán",
+    imageCerti: "/images/courses/certificado-react-app-full-stack.jpg",
+
   }
 ];
 

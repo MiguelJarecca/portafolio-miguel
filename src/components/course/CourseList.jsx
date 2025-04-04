@@ -5,17 +5,31 @@ import { CourseCard } from "./CourseCard";
 
 export const CourseList = () => {
 
-    const [coursesList] = useState(courses);
+  const [courseList] = useState(courses);
+  const [selectedCerti, setSelectedCerti] = useState(null);
 
-    return (
-      <div className="p-6">
-        <h2 className="text-2xl font-bold mb-4">Mis Cursos de Udemy</h2>
-        <div className="flex gap-4 flex-wrap">
-          {coursesList.map(course => (
-            <CourseCard key={course.id} course={course} />
-          ))}
-        </div>
+  return (
+
+
+    <section className="course-list">
+      
+      <h2>Mis Cursos</h2>
+      <div className="course-container">
+        {courseList.map(course => (
+          <CourseCard key={course.id} course={course} onShowCerti={setSelectedCerti} />
+        ))}
       </div>
-    );
+      
+      {selectedCerti && (
+        <div className="modal" onClick={() => setSelectedCerti(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={() => setSelectedCerti(null)}>&times;</span>
+            <img src={selectedCerti} alt="Certificado" className="certi-image" />
+          </div>
+        </div>
+      )}
+
+    </section>
+  );
   
 }

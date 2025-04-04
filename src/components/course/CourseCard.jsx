@@ -1,16 +1,34 @@
+import { useState } from "react";
 
-export const CourseCard = ({course}) => {
+export const CourseCard = ({course, onShowCerti}) => {
 
-    return (
-        <div className="border rounded-lg shadow-lg p-4 w-72">
-          <img src={course.image} alt={course.title} className="w-full h-40 object-cover rounded" />
-          <h3 className="text-lg font-semibold mt-2">{course.title}</h3>
-          <p className="text-sm text-gray-600">{course.instructor}</p>
-          <div className="flex items-center mt-1">
-            <span className="text-yellow-500">★ {course.rating}</span>
-            <span className="text-gray-500 text-sm ml-2">({course.reviews} reviews)</span>
-          </div>
-          <p className="font-bold mt-2">{course.price}</p>
+  const {title, subtitle, imageCourse, instructor, imageCerti} = course;
+
+  return (
+    <div className="course-card">
+
+      <div className="course-content"> 
+        <img src={imageCourse} alt={title} className="course-image" />
+
+        <div className="course-info">
+          <h3 className="course-title">{title}</h3>
+          <h4 className="course-subtittle">{subtitle}</h4>
+
+          <p className="course-instructor">{instructor}</p>
         </div>
-      );
+       
+        <button className="certi-button" onClick={() => onShowCerti(imageCerti)}>
+          Ver Certificado
+        </button>
+      </div>
+
+      <div className="course-description">
+        <h2>Que aprendi</h2>
+
+        
+      </div>
+
+    </div>
+  );
+
 }
