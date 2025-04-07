@@ -2,7 +2,8 @@ import { useState } from "react";
 
 export const CourseCard = ({course, onShowCerti}) => {
 
-  const {title, subtitle, imageCourse, instructor, imageCerti} = course;
+  const {title, subtitle, imageCourse, instructor, imageCerti, topics} = course;
+  // console.log('control '+ JSON.stringify(topics, null, 2))
 
   return (
     <div className="course-card">
@@ -25,6 +26,14 @@ export const CourseCard = ({course, onShowCerti}) => {
       <div className="course-description">
         <h2>Que aprendi</h2>
 
+        <ul>
+          {topics.map((topic, index) => (
+            <li key={index}>
+              
+              {topic}
+            </li>
+          ))}
+        </ul>
         
       </div>
 

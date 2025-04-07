@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import courses from "../../data/Courses";
 import { CourseCard } from "./CourseCard";
@@ -7,6 +7,23 @@ export const CourseList = () => {
 
   const [courseList] = useState(courses);
   const [selectedCerti, setSelectedCerti] = useState(null);
+
+    // Cierre del modal con tecla Escape
+    useEffect(() => {
+      const handleKeyDown = (e) => {
+        if (e.key === "Escape") {
+          setSelectedCerti(null);
+        }
+      };
+  
+      if (selectedCerti) {
+        window.addEventListener("keydown", handleKeyDown);
+      }
+  
+      return () => {
+        window.removeEventListener("keydown", handleKeyDown);
+      };
+    }, [selectedCerti]);
 
   return (
 
