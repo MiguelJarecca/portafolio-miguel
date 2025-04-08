@@ -461,45 +461,89 @@ span {
   background-color: red;
 } */
 
+.skills {
+  padding: 4rem 7%;
+
+}
+
+.skills .skill-category {
+
+}
+
 .skills h3 {
   color: var(--text-color); 
   font-size: 2rem;
   border-left: 5px solid var(--main-color);
   padding-left: 15px;
-  margin: 21px 0 21px 0;
 }
 
-.front-div {
-  margin: auto;
+/* ------ skill-grid ------ */
+/* Agrupamos por filas */
+.skills-grid {
   display: flex;
-  gap: 20px;
-}
-
-.back-div {
-  margin: auto;
-  display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
 }
 
-.other-div {
-  margin: auto;
+/* Posicionamos cada hexágono */
+.hex-skill {
+  width: 120px;
+  aspect-ratio: 1;
+  background-color: teal;
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.f-item {
-  width: 80px;
-  height: 80px; 
-  /* color: red; */
-  font-size: 6rem;
-  display: flex; /* Es para activar los de abajo*/
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  box-shadow: 0 0 6px 0 rgba(117, 78, 249, 5);
+  color: white;
+  transition: transform 0.3s ease;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
 }
+
+/* Íconos SVG dentro */
+.hex-skill svg {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Efecto hover */
+.hex-skill:hover {
+  transform: scale(1.1);
+}
+
+.hex {
+  position: relative;
+  /* visibility: hidden; */
+  outline: 1px solid transparent;
+}
+
+.hex::after {
+  content: '';
+  display: block;
+  padding-bottom: 0rem;
+}
+
+/* Este bloque monta cada segunda fila hacia arriba un 15% */
+/* .skills-grid .hex-skill:nth-child(5n+3),
+.skills-grid .hex-skill:nth-child(5n+4),
+.skills-grid .hex-skill:nth-child(5n+5) {
+  margin-top: -15%;
+} */
+
+
 
 /* ------ frontend ------ */
 
