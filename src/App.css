@@ -478,11 +478,12 @@ span {
 }
 
 /* ------ skill-grid ------ */
+
 /* Agrupamos por filas */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   justify-content: center;
   padding: 2rem;
   position: relative;
@@ -525,23 +526,19 @@ span {
 }
 
 .hex {
-  position: relative;
-  /* visibility: hidden; */
-  outline: 1px solid transparent;
+  border: 2px solid #007ACC;
 }
 
-.hex::after {
-  content: '';
-  display: block;
-  padding-bottom: 0rem;
+/* Hexágonos a partir del 3° en adelante, hacia abajo */
+.hex:nth-child(n + 5) {
+  margin-top: -30px; /* Este valor es el que genera la superposición */
 }
 
-/* Este bloque monta cada segunda fila hacia arriba un 15% */
-/* .skills-grid .hex-skill:nth-child(5n+3),
-.skills-grid .hex-skill:nth-child(5n+4),
-.skills-grid .hex-skill:nth-child(5n+5) {
-  margin-top: -15%;
-} */
+/* Hexágonos en filas pares desplazados a la derecha */
+.hex:nth-child(4n + 5) {
+  margin-left: 130px; /* Ajusta este valor según el ancho de tu hexágono */
+}
+
 
 
 
