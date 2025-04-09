@@ -12,29 +12,17 @@ export default function Skills() {
 
       <article className='skills-category'>
         <h3>Frontend</h3>
-        
-        {/* <div className="skills-grid">
+
+        <div className="skills-grid">
           {frontendSkills.map(({ name, Icon }) => (
             <div className="hex" key={name}>
-              <div className="hex-in">
-                <div className="hex-content">
-                  <Icon />
-                </div>
+              <div className="hex-content">
+                <Icon />
+                <span className='tooltip'>{name}</span>
               </div>
             </div>
           ))}
-        </div> */}
-
-<div className="skills-grid">
-  {frontendSkills.map(({ name, Icon }) => (
-    <div className="hex" key={name}>
-      <div className="hex-skill" >
-        <Icon />
-        <span>{name}</span>
-      </div>
-    </div>
-  ))}
-</div>
+        </div>
 
 
 

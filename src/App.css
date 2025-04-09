@@ -463,7 +463,7 @@ span {
 
 .skills {
   padding: 4rem 7%;
-
+  background: #fff7f2;
 }
 
 .skills .skill-category {
@@ -475,25 +475,24 @@ span {
   font-size: 2rem;
   border-left: 5px solid var(--main-color);
   padding-left: 15px;
+  margin-top: 2rem  ;
 }
 
 /* ------ skill-grid ------ */
 
-/* Agrupamos por filas */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  /* gap: 1.5rem; */
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  /* grid-template-columns: repeat(6, 120px);
+  grid-template-rows: repeat(2, 120px); */
   padding: 2rem;
-  position: relative;
+  margin-top: 4rem;
 }
 
-/* Posicionamos cada hexágono */
-.hex-skill {
+.hex {
   width: 120px;
   aspect-ratio: 1;
-  background-color: teal;
+  background-color: #fff;
   clip-path: polygon(
     50% 0%,
     93% 25%,
@@ -502,67 +501,83 @@ span {
     7% 75%,
     7% 25%
   );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #303141;
+  transition: transform 0.3s ease;
+}
+
+.hex-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  transition: transform 0.3s ease;
-  text-align: center;
-  font-size: 0.9rem;
+  
   position: relative;
 }
 
-/* Íconos SVG dentro */
-.hex-skill svg {
-  width: 3rem;
-  height: 3rem;
+.hex-content svg {
+  width: 4.5rem;
+  height: 4.5rem;
   margin-bottom: 0.5rem;
 }
 
-/* Efecto hover */
-.hex-skill:hover {
+.hex:hover {
   transform: scale(1.1);
 }
 
-.hex {
-  border: 2px solid #007ACC;
+/* FILAS INTERCALADAS Y SUPERPUESTAS */
+.skills-grid > .hex {
+  margin-top: -18px;
 }
 
-/* Hexágonos a partir del 3° en adelante, hacia abajo */
-.hex:nth-child(n + 5) {
-  margin-top: -30px; /* Este valor es el que genera la superposición */
+.skills-grid > .hex:nth-child(n+7):nth-child(-n+12) {
+  transform: translateX(60px);
 }
 
-/* Hexágonos en filas pares desplazados a la derecha */
-.hex:nth-child(4n + 5) {
-  margin-left: 130px; /* Ajusta este valor según el ancho de tu hexágono */
+.tooltip {
+  position: absolute;
+  bottom: 80%;
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
 }
+
+.hex-content:hover .tooltip {
+  display: block;
+}
+
+
 
 
 
 
 /* ------ frontend ------ */
 
-.front-div .html-icon {
-  color: red;
+.skills-grid > .hex:nth-child(1) svg { 
+  color: #E34F26; 
 }
 
-.front-div .css-icon {
-  color: blue;
+.skills-grid > .hex:nth-child(2) svg { 
+  color: #264de4; 
 }
 
-.front-div .js-icon {
-  color: yellow;
+.skills-grid > .hex:nth-child(3) svg { 
+  color: #f7df1e; 
 }
 
-.front-div .boostrap-icon {
-  color: purple;
+.skills-grid > .hex:nth-child(4) svg { 
+  color: #61dafb; 
 }
 
-.front-div .react-icon {
-  color: #339AF0;
+.skills-grid > .hex:nth-child(5) svg { 
+  color: #563d7c; 
 }
+
 
 /* .java-icon {
   font-family: 'Font Awesome 5 Fre';

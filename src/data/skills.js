@@ -11,7 +11,14 @@ export const frontendSkills = [
     { name: 'React', Icon: ReactIcon },
     { name: 'Bootstrap', Icon: BootstrapIcon },
     { name: 'Bootstrap', Icon: BootstrapIcon },
-
+    { name: 'React', Icon: ReactIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },
+    { name: 'React', Icon: ReactIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },{ name: 'React', Icon: ReactIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },
+    { name: 'Bootstrap', Icon: BootstrapIcon },
   ];
   
   // Backend skills
