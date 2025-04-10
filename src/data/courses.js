@@ -11,14 +11,12 @@ const courses = [
     topics: [
       "Qué es la arquitectura de microservicios y en qué se diferencia de la arquitectura monolítica y SOA",
       "Cómo construir microservicios listos para producción usando Java, Spring, Spring Boot y Spring Cloud",
-      "Qué son las aplicaciones nativas de la nube y la metodología de 15 factores detrás de ellas",
       "Gestión de configuración en microservicios usando Spring Cloud Config Server",
       "Patrón de descubrimiento y registro de servicios en microservicios e implementación con Spring Eureka Server",
       "Cómo construir microservicios resilientes usando el framework RESILIENCE4J",
       "Manejo de aspectos transversales y enrutamiento con Spring Cloud Gateway",
       "Implementación de observabilidad y monitoreo con Prometheus, Loki, Promtail, Tempo y Grafana",
       "Seguridad en microservicios usando OAuth2, OpenID Connect y Spring Security",
-      "El rol de Docker en microservicios y cómo construir imágenes y contenedores",
       "El rol de Kubernetes como orquestador de contenedores en microservicios",
       "Cómo construir microservicios orientados a eventos usando RabbitMQ, Kafka, Spring Cloud Functions y Spring Cloud Stream"
     ]

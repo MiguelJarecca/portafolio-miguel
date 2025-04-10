@@ -38,10 +38,10 @@ export default function Home() {
           
       </div>
 
-      <div className="profesion-container">
-        <div className="profesion-box">
-        </div>  
-      </div>
+      <picture className="picture-container">
+        <img src="/images/designer.svg" alt="" />
+        {/* <img src="/images/vector.jpg" alt="" /> */}
+      </picture>
     </section>
   )
 }

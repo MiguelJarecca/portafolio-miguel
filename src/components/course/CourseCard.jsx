@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Check } from "../../icons/Icons";
 
 export const CourseCard = ({course, onShowCerti}) => {
 
@@ -29,8 +30,8 @@ export const CourseCard = ({course, onShowCerti}) => {
         <ul>
           {topics.map((topic, index) => (
             <li key={index}>
-              
-              {topic}
+              <Check />
+              <p>{topic}</p>
             </li>
           ))}
         </ul>
