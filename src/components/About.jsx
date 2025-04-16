@@ -10,25 +10,31 @@ export default function About() {
 
       <h2 className="heading">Sobre <span>Mí</span></h2>
 
-      
-      <div className="about-img">
-        <img src={imgPerfil} alt="" />
+      <div className="about-container">
+        <div className="about-img">
+          <img src={imgPerfil} alt="" />
+        </div>
+
+        <div className="about-content">
+
+          <h3>Hola, Estoy aqui para ayudarte en tu proximo proyecto</h3>
+          
+          <p>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
+            Trabajo con <span>React, Redux, Java (Spring Boot)</span>. 
+            Tengo experiencia construyendo e-commerce funcionales desde cero, integrando APIs REST, 
+            control de sesiones, manejo de estado global y despliegue en entornos locales.
+          </p>
+
+          <p>Recientemente profundicé en arquitectura de microservicios, usando herramientas como Spring Cloud, 
+            Docker, Kubernetes, RabbitMQ, Kafka, Prometheus, Grafana y OAuth2, enfocandome en el desarrollo 
+            de sistemas distribuidos, resilientes, escalables y seguros.
+          </p>
+
+          <div className="about-link">
+              <Link to={'/courses'}>Mis Cursos</Link>
+          </div>
       </div>
-
-      <div className="about-content">
-
-        <h3>Hola, Estoy aqui para ayudarte en tu proximo proyecto</h3>
         
-        <p>Soy Miguel Jarecca Ccallo desarrollador de aplicaciones web con 
-          conocimientos en <span> <strong>back-end</strong> </span> y 
-          <span> <strong>front-end</strong> </span>.
-        </p>
-
-        <div className="about-link">
-            <Link to={'/courses'}>Mis Cursos</Link>
-        </div>    
-
-      
     </div>
   </section>
   )
