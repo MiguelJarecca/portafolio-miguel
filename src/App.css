@@ -243,77 +243,6 @@ body {
   height: 40rem;
 }
 
-/* .home .profesion-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 750px;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.home .profesion-container .profesion-box {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 750px;
-  height: 100vh;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home .profesion-box .profesion {
-  position: absolute;
-  left: 45px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: var(--main-color);
-  transform: rotate(calc(360deg / 4 * var(--i)));
-  transform-origin: 325px;
-  background: var(--bg-color);
-  padding: 13px 0;
-} */
-
-/* 
-.home .profesion-box .profesion:nth-child(2),
-.home .profesion-box .profesion:nth-child(4) {
-  padding-bottom: 20px;
-}
-
-.home .profesion svg {
-  font-size: 2.8rem;
-  padding-bottom: 10px;
-}
-
-.home .profesion h3 {
-  font-size: 2.2rem;
-  line-height: 1;
-  font-weight: 600;
-}
-
-.home .circle {
-  width: 487px;
-  height: 487px;
-  border: 3px solid var(--main-color);
-  border-radius: 50%;
-}
-
-.home .profesion-container .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: calc(100vh / 2) solid var(--main-color);
-  border-right: 375px solid var(--main-color);
-  border-bottom: calc(100vh /2) solid var(--main-color);
-  border-left: 375px solid transparent
-} */
-
 /* ============================ ABOUT SECTION STYLE =========================== */
 
 span {
@@ -467,20 +396,13 @@ span {
 
 /* ============================== SKILLS SECTION STYLE =======================================  */
 
-/* .skills-content {
-  width: 100%;
-  height: 35vw;
-  margin: auto;
-  background-color: red;
-} */
-
 .skills {
   padding: 4rem 7%;
-  background: #fff7f2;
+  background: #efefef;
 }
 
-.skills .skill-category {
-
+.skills .skills-category {
+  margin-top: 2rem;
 }
 
 .skills h3 {
@@ -488,36 +410,25 @@ span {
   font-size: 2rem;
   border-left: 5px solid var(--main-color);
   padding-left: 15px;
-  margin-top: 2rem  ;
 }
 
 /* ------ skill-grid ------ */
 
 .skills-grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); */
   grid-template-columns: repeat(6, 120px);
   grid-template-rows: auto;
   padding: 2rem;
   margin-top: 4rem;
 }
 
-/* .hex-wrapper {
+.hex-wrapper {
+  filter: drop-shadow(0 4px 8px rgba(50, 50, 93, 0.12));
+
+  pointer-events: none; /* evita que capte el hover */
   position: relative;
-  z-index: 0;
+  overflow: visible;
 }
-
-.hex-wrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  filter: blur(25px) saturate(1.5);
-  background: radial-gradient(circle at center, #bd9a85, #fff7f2);
-  z-index: -1;
-  border-radius: 20%;
-  transform: scale(1.1);
-} */
-
 
 .hex {
   width: 120px;
@@ -532,22 +443,44 @@ span {
     7% 25%
   );
 
+  pointer-events: auto; /* solo el hexágono capta el hover */
+
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-
-  box-shadow: 0 2px 6px 0 rgba(0, 61, 255, 0.16);
-
 }
 
 .hex-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   
   position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hex-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+.hex-wrapper:hover {
+  z-index: 10;
 }
 
 .hex-content svg {
@@ -556,127 +489,84 @@ span {
   margin-bottom: 0.5rem;
 }
 
-
-
-picture::after {
-  background: inherit;
-  position: absolute;
-  content: '';
-  filter: blur(25px) saturate(1.5);
-  width: 100%;
-  height: 100%;
-  scale: 1.05;
-}
-
-
-
-/* FILAS INTERCALADAS Y SUPERPUESTAS */
-.skills-grid > .hex {
+.skills-grid > .hex-wrapper {
   margin-top: -18px;
 }
 
-.skills-grid > .hex:nth-child(n+7):nth-child(-n+12) {
+.skills-grid > .hex-wrapper:nth-child(n+7):nth-child(-n+12) {
   transform: translateX(60px);
 }
-
-.tooltip {
-  position: absolute;
-  bottom: 80%;
-  background: black;
-  color: white;
-  padding: 5px;
-  border-radius: 5px;
-  display: none;
-}
-
-.hex-content:hover .tooltip {
-  display: block;
-}
-
-
-
-
 
 
 /* ------ frontend ------ */
 
-.skills-grid > .hex:nth-child(1) svg { 
+.skills-grid > .hex-wrapper:nth-child(1) svg { 
   color: #E34F26; 
 }
 
-.skills-grid > .hex:nth-child(2) svg { 
+.skills-grid > .hex-wrapper:nth-child(2) svg { 
   color: #264de4; 
 }
 
-.skills-grid > .hex:nth-child(3) svg { 
+.skills-grid > .hex-wrapper:nth-child(3) svg { 
   color: #f7df1e; 
 }
 
-.skills-grid > .hex:nth-child(4) svg { 
+.skills-grid > .hex-wrapper:nth-child(4) svg { 
   color: #61dafb; 
 }
 
-.skills-grid > .hex:nth-child(5) svg { 
+.skills-grid > .hex-wrapper:nth-child(5) svg { 
   color: #563d7c; 
 }
 
-
-/* .java-icon {
-  font-family: 'Font Awesome 5 Fre';
-  color: #0fa2eb;
-} */
-
 /* ------ backend ------ */
 
-.java-icon {
-  color: #8B4513; /* Color para la base (café) */
+.skills-grid > .hex:nth-child(1) svg { 
+  color: #8B4513; 
 }
 
-.java-icon::before {
-  color: #00ff0d; /* Color para el fuego */
+.skills-grid > .hex:nth-child(2) svg { 
+  color: #6db33f; 
 }
 
-.back-div .siSpring-icon {
-  color: #6db33f;
+.skills-grid > .hex:nth-child(3) svg { 
+  color: #00758f; 
 }
 
- .back-div .nodeJs-icon {
-  color: #339933;
-}
-
-.back-div .siMySql-icon {
-  color: #00758f
-}
-
-.back-div .siSpringSecurity-icon {
-  color: #6db33f;
-}
 
 /* ------ otros ------ */
 
-.other-div .docker-icon {
-  color: #2496ED;
+.skills-grid > .hex:nth-child(1) svg { 
+  color: #2496ED; 
 }
 
-.other-div .siKuberenetes-icon {
-  color: #326CE5;
+.skills-grid > .hex:nth-child(2) svg { 
+  color: #326CE5; 
 }
 
-.other-div .siSwagger-icon {
-  color: #85EA2D;
+.skills-grid > .hex:nth-child(3) svg { 
+  color: #85EA2D; 
 }
 
-.other-div .gitHub-icon {
-  color: #181717
+.skills-grid > .hex:nth-child(4) svg { 
+  color: #00758f; 
 }
 
-.other-div .siIntellijidea-icon {
-  color: #000;
+.skills-grid > .hex:nth-child(5) svg { 
+  color: #181717; 
 }
 
-.other-div .siVisualStudioCode-icon {
-  color: #007ACC;
+.skills-grid > .hex:nth-child(6) svg { 
+  color: #181717 
 }
+.skills-grid > .hex:nth-child(7) svg { 
+  color: #000; 
+}
+.skills-grid > .hex:nth-child(8) svg { 
+  color: #007ACC; 
+}
+
 
 /* =============== CONTACT SECTION STYLE ===============  */
 

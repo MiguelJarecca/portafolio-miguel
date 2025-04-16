@@ -45,7 +45,7 @@ const courses = [
     id: 3,
     title: "Programación Web Full Stack",
     subtitle: "",
-    imageCourse: "/images/courses/course-egg.png",
+    imageCourse: "/images/courses/course-egg-full-stack.png",
     instructor: "Egg",
     imageCerti: "/images/courses/certi-full-stack.jpeg",
     topics: [
@@ -62,7 +62,7 @@ const courses = [
   },
   {
     id: 4,
-    title: "Programación desde Cero",
+    title: "Programación desde Cero Latam",
     subtitle: "",
     imageCourse: "/images/courses/course-egg.png",
     instructor: "Egg",
