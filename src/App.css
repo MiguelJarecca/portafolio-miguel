@@ -269,16 +269,85 @@ span {
 
 /* =============== PROYECTS SECTION STYLE =============== */
 
-.proyects .proyects-box {
-  /* position: relative; */
-  max-width: 100%;
-  padding: 2rem 0 0;
+.proyects {
+  padding: 4rem 7%;
+  background: #fff7f2;
 }
 
-.proyects-wrapper .proyects-content {
-  display: flex;
-  gap: 30px;
+.proyects h2 {
+  font-size: 4.5rem;
+  text-align: center;
 }
+
+.proyects .proyects-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.proyects-container .proyects-grid {
+  width: 50%;
+  height: 550px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "element1 element1 element2 element2"
+  "element1 element1 element2 element2"
+  "element3 element3 element3 element3"
+  "element3 element3 element3 element3"
+  ;
+  gap: 2rem;
+}
+
+.proyects-container .proyects-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+  background: #fff;
+  
+}
+
+.proyects-slide .item-1 {
+  grid-area: element1;
+}
+
+.proyects-slide .item-2 {
+  grid-area: element2;
+}
+
+.proyects-slide .item-3 {
+  grid-area: element3;
+}
+
+.proyects-slide .item-1 .div-img {
+  width: 100%;
+}
+
+.proyects-slide .item-1 img {
+  
+}
+
+
+
+/* @media (min-with:700px){
+
+  .proyects-container .proyects-grid {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "element1 element1 element1"
+    "element2 element2 element2"
+    "element3 element3 element3"
+    ;
+    gap: 2rem;
+  }
+  
+} */
 
 .proyects-content .proyects-slide {
    display: flex;
@@ -290,18 +359,6 @@ span {
    padding: 3rem 5rem;
    border-top: .8rem solid var(--main-color);
    border-bottom: .8rem solid var(--main-color);
-}
-
-.proyects-slide h3 {
-  font-size: 2.5rem;
-  color: var(--main-color);
-}
-
-.proyects-slide .text-content {
-  width: 100%;
-  content: initial;
-  font-size: 1.6rem;
-  margin: 2rem 0 3rem;
 }
 
 .proyects-slide .technologies {
