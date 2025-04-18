@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Check } from "../../icons/Icons";
 
 export const CourseCard = ({course, onShowCerti}) => {

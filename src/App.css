@@ -279,6 +279,8 @@ span {
   text-align: center;
 }
 
+/*----- grid -----*/
+
 .proyects .proyects-container {
   display: flex;
   gap: 2rem;
@@ -301,34 +303,44 @@ span {
   gap: 2rem;
 }
 
-.proyects-container .proyects-slide {
+.proyects-grid .proyects-slide {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
   padding: 2rem;
   background: #fff;
-  
+  gap: 2rem;
 }
 
-.proyects-slide .item-1 {
+.proyects-grid .proyects-slide .div-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.proyects-grid .proyects-slide .div-img img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.proyects-grid .item-1 {
   grid-area: element1;
+  flex-direction: column;
 }
 
-.proyects-slide .item-2 {
+.proyects-grid .item-2 {
   grid-area: element2;
+  flex-direction: column;
 }
 
-.proyects-slide .item-3 {
+.proyects-grid .item-3 {
   grid-area: element3;
 }
 
-.proyects-slide .item-1 .div-img {
+.proyects-grid .item-3 .div-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 100%;
-}
-
-.proyects-slide .item-1 img {
-  
 }
 
 
@@ -349,25 +361,54 @@ span {
   
 } */
 
-.proyects-content .proyects-slide {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   background: var(--bg-color);
-   border-radius: 2rem;
-   box-shadow: 0 .1rem .5rem var(--shadow-color);
-   padding: 3rem 5rem;
-   border-top: .8rem solid var(--main-color);
-   border-bottom: .8rem solid var(--main-color);
+/*----- grid-info -----*/
+
+.proyects-container .proyects-info {
+  background: #fff;
+  padding: 2rem;
+
 }
 
-.proyects-slide .technologies {
+.proyects-info .proyects-content {
+  /* display: flex; */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.proyects-content ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+.proyects-content ul li {
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  text-indent: -2.5rem;
+  line-height: 1.6;
+}
+
+.proyects-content ul li svg {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.proyects-info h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/*--- grid-info-technologies ---*/
+
+.proyects-content .technologies {
   display: flex;
   margin-right: auto;
   gap: 10px;
 }
 
-.proyects-slide .technologies-icons {
+.technologies .technologies-icons {
   display: flex;
   border-radius: 2px;
   padding: 4px 8px;
@@ -375,46 +416,59 @@ span {
   gap: 10px;
 }
 
-.proyects-slide .technologies svg {
+.technologies-icons svg {
   font-size: 1.5rem;
 }
 
-.proyects-slide .technologies span {
+.technologies-icons p {
   font-size: 1.2rem;
 }
 
-.proyects-slide .technologies-icons:nth-child(1) {
+.technologies-icons:nth-child(1) {
   color: red;
 }  
 
-.proyects-slide .technologies-icons:nth-child(2) {
+.technologies-icons:nth-child(2) {
   color: blue;
 }  
 
-.proyects-slide .technologies-icons:nth-child(3) {
+.technologies-icons:nth-child(3) {
   color: yellow;
 }  
 
-.proyects-slide .technologies-icons:nth-child(4) {
+.technologies-icons:nth-child(4) {
   color: #8B4513;
 } 
 
-.proyects-slide .technologies-icons:nth-child(5) {
+.technologies-icons:nth-child(5) {
   color: #339AF0;
 } 
 
-.proyects-slide .proyect-link {
-  width: 100%;
-  background: var(--main-color);
-  text-align: center;
-  padding: .8rem;
-  border-radius: 4px;
-  margin-top: 3rem;
+.proyects-content a {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  background: #f60;
 }
 
-.proyects-slide .proyect-link a {
+.home-content .btn-cv {
+  display: inline-block;
+  padding: 1.2rem 2.8rem;
+  background: #f60;
   font-size: 1.6rem;
-  color: var(--white-color);
+  color: #fff;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 2px solid #f60;
+  text-decoration: none;
+
+  transition: .5s ease;
+}
+
+.home-content .btn-cv:hover {
+  background: #f60;
+  color: #fff;
+  border-color: #f90;
 }
 
 /* ============================== SKILLS SECTION STYLE =======================================  */
