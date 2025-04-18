@@ -87,7 +87,7 @@ export default function Proyects() {
                 <p>React</p></div>
               </div>
 
-              <a href="https://github.com/MiguelJarecca/user">link</a>
+              <a href="https://github.com/MiguelJarecca/user">https://github.com/MiguelJarecca/user</a>
 
           </div>
 

@@ -365,12 +365,12 @@ span {
 
 .proyects-container .proyects-info {
   background: #fff;
-  padding: 2rem;
+  padding: 2rem 4rem;
 
 }
 
 .proyects-info .proyects-content {
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 2rem;
 }
@@ -446,36 +446,29 @@ span {
 
 .proyects-content a {
   display: inline-block;
-  padding: 1.2rem 2.8rem;
+  padding: 1.2rem 15.8rem;
   background: #f60;
-}
-
-.home-content .btn-cv {
-  display: inline-block;
-  padding: 1.2rem 2.8rem;
-  background: #f60;
-  font-size: 1.6rem;
-  color: #fff;
-  letter-spacing: .1rem;
-  font-weight: 600;
-  border-radius: 6px;
-  border: 2px solid #f60;
+  align-self: flex-start;
+  margin: 0 auto;
   text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: 2px solid #f60;
+  margin-top: 5rem;
 
   transition: .5s ease;
 }
 
-.home-content .btn-cv:hover {
-  background: #f60;
-  color: #fff;
-  border-color: #f90;
+.proyects-content a:hover {
+  background: rgb(230, 92, 1);
 }
 
 /* ============================== SKILLS SECTION STYLE =======================================  */
 
 .skills {
   padding: 4rem 7%;
-  background: #efefef;
+  background: #fff;
 }
 
 .skills .skills-category {
@@ -483,9 +476,9 @@ span {
 }
 
 .skills h3 {
-  color: var(--text-color); 
+  color: #000; 
   font-size: 2rem;
-  border-left: 5px solid var(--main-color);
+  border-left: 5px solid #f60;
   padding-left: 15px;
 }
 
@@ -646,6 +639,11 @@ span {
 
 
 /* =============== CONTACT SECTION STYLE ===============  */
+
+.contact {
+  padding: 4rem 7%;
+  background: #fff7f2;
+}
 
 .contact h2 {
   margin-bottom: 3rem;
