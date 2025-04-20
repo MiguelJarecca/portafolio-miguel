@@ -35,10 +35,25 @@ export default function Contact() {
       <h2 className="heading">Contacta<span> me</span></h2>
 
       <div className="contact-container">
-          <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 
-              target="_blank">
-              <ReactIcon/>
+
+        <div className="contact-social-media">
+          <a href="https://wa.me/+51970449496?text=Hola%20Miguel,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkedin-link"
+            >
+              <img src="/images/yelp-Strokee.png" alt="" />
+          </a>
+
+          <a href="https://wa.me/+51970449496?text=Hola%20Miguel,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+            >
+              <img src="/images/Yelp-Stroke.png" alt="" />
           </a> 
+        </div>
+          
 
         <form className='form' onSubmit={onSubmitUserForm}>
 
@@ -53,8 +68,8 @@ export default function Contact() {
                   onChange={onInputUserForm}
                 />
 
-                <label htmlFor="name">Nombre:</label>
-                <span></span>
+                <label className='form-label' htmlFor="name">Nombre:</label>
+                <span className='form-line'></span>
               </div>
 
               <div className="input-box">
@@ -67,8 +82,8 @@ export default function Contact() {
                   onChange={onInputUserForm}
                   />
 
-                <label htmlFor="email">Correo Electrónico:</label>
-                <span></span>
+                <label className='form-label' htmlFor="email">Correo Electrónico:</label>
+                <span className='form-line'></span>
               </div>        
 
             <div className="input-box">
@@ -81,8 +96,8 @@ export default function Contact() {
                 onChange={onInputUserForm}
 
                 />
-              <label htmlFor="email">Mensaje:</label>
-              <span></span>
+              <label className='form-label' htmlFor="email">Mensaje:</label>
+              <span className='form-line'></span>
             </div>
 
             <button 

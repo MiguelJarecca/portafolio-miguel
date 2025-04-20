@@ -649,12 +649,14 @@ span {
 .contact .contact-container {
   display: flex;
   gap: 4rem;
-  
+}
+
+.contact .contact-container > * {
+  flex: 1;
 }
 
 .contact-container a {
   display: flex;
-  width: 50%;
   background: #fff;
   padding: 2rem;
 }
@@ -714,6 +716,40 @@ span {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.input-box input:focus + .form-label,
+.input-box input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color: #2496ED;
+}
+
+.input-box .form-label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+}
+
+.input-box .form-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #2496ED;
+
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform .4s;
+}
+
+.input-box input:focus ~ .form-line,
+.input-box input:not(:placeholder-shown) ~ .form-line {
+  transform: scale(1);
+}  
 
 
 /* =============== FOOTER SECTION STYLE ===============  */
