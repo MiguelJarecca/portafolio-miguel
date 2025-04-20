@@ -5,17 +5,19 @@ import About from "../components/About"
 import Proyects from "../components/Proyects"
 import Skills from "../components/Skills"
 import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 
 export const Portfolio = () => {
 
     return(
         <>
             <Header />
-            <section><Home /></section>
-            <section><About /></section>
-            <section><Proyects /></section>
-            <section><Skills /></section>
-            <section><Contact /></section>
+            <Home />
+            <About />
+            <Proyects />
+            <Skills />
+            <Contact />
+            <Footer />
         </>
     )
 }

@@ -649,22 +649,33 @@ span {
 .contact .contact-container {
   display: flex;
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 .contact .contact-container > * {
   flex: 1;
 }
 
-.contact-container a {
+.contact-container .contact-social-media {
   display: flex;
-  background: #fff;
-  padding: 2rem;
-}
-
-.contact-container a svg {
+  flex-direction: column;
+  text-align: center;
   width: 100%;
   height: auto;
+  gap: 2rem;
+}
+
+.contact-social-media a {
+  max-width: 100%;
+  padding: 2rem;
+  background: #fff;
+}
+
+.contact-container a img {
+  max-width: 60%;
+  height: auto;
 }  
+
 /**/
 .home-content .social-media a {
   display: inline-flex;
@@ -682,12 +693,12 @@ span {
 
   transition: .5s ease;
 }
+
 /*----- form ----- */
 
 .contact-container .form {
-  margin: auto;
   max-width: 100%;
-  padding: 2rem;
+  padding: 6rem;
   background: #fff;
   text-align: center;
 
@@ -696,7 +707,7 @@ span {
 
 .contact-container .form .form-container {
   display: grid;
-  gap: 2.5rem;
+  gap: 4rem;
 }
 
 .form-container .input-box {
@@ -708,8 +719,8 @@ span {
   width: 100%;
   background: none;
   color: #706c6c;
-  font-size: 1rem;
-  padding: .6rem .3rem;
+  font-size: 1.6rem;
+  padding: 1rem 0;
   border: none;
   outline: none;
   border-bottom: 1px solid var(--color);
@@ -718,7 +729,7 @@ span {
 
 .input-box input:focus + .form-label,
 .input-box input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-12px) scale(.7);
+  transform: translateY(-12px) scale(1);
   transform-origin: left top;
   color: #2496ED;
 }
@@ -728,7 +739,8 @@ span {
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 0;
+  font-size: 1.2rem;
   transform: translateY(10px);
   transition: transform .5s, color .3s;
 }
@@ -751,6 +763,25 @@ span {
   transform: scale(1);
 }  
 
+.form-container .form-button {
+  clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 12px);
+
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  padding: 1.22rem 8rem;
+  background: #47529e;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  margin-top: 2rem;
+
+  cursor: pointer;
+}
+
+.form-container .form-button:hover {
+  background: #f60;
+}
 
 /* =============== FOOTER SECTION STYLE ===============  */
 
@@ -759,8 +790,8 @@ span {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem 7%;
-  background: var(--main-color);
+  padding: 2.5rem 7%;
+  background: #47529e;
 }
 
 .footer-text p {

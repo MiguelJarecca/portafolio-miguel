@@ -20,13 +20,16 @@ export default function Home() {
 
           <div className="social-media">
             <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebookF}/></a>  
             <a href="https://www.linkedin.com/in/migueljarecca"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn}/></a> 
             <a href="https://github.com/MiguelJarecca"
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub}/></a> 
 
           </div>   

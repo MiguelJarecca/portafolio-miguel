@@ -37,20 +37,20 @@ export default function Contact() {
       <div className="contact-container">
 
         <div className="contact-social-media">
-          <a href="https://wa.me/+51970449496?text=Hola%20Miguel,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+          <a href="https://www.linkedin.com/in/migueljarecca"
             target="_blank"
             rel="noopener noreferrer"
             className="linkedin-link"
             >
-              <img src="/images/yelp-Strokee.png" alt="" />
+              <img src="/images/social-media/linkedin.png" alt="" />
           </a>
 
-          <a href="https://wa.me/+51970449496?text=Hola%20Miguel,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+          <a href="https://github.com/MiguelJarecca"
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"
             >
-              <img src="/images/Yelp-Stroke.png" alt="" />
+              <img src="/images/social-media/github.png" alt="" />
           </a> 
         </div>
           
@@ -96,13 +96,13 @@ export default function Contact() {
                 onChange={onInputUserForm}
 
                 />
-              <label className='form-label' htmlFor="email">Mensaje:</label>
+              <label className='form-label' htmlFor="textarea">Mensaje:</label>
               <span className='form-line'></span>
             </div>
 
             <button 
               type='submit'
-              
+                className='form-button'
               >
                 Enviar
             </button>
