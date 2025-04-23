@@ -15,8 +15,7 @@ export default function Home() {
           <h3>Hola, Soy</h3>
           <h1>Miguel Jarecca</h1>
 
-          <p>Transformando ideas en soluciones escalables.
-            Desarrollador Fullstack especializado en React, Java y Microservicios.</p>
+          <h2>Desarrollador Web Full Stack</h2>
 
           <div className="social-media">
             <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 

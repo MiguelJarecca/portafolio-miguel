@@ -35,7 +35,7 @@ body {
 /* ================ HEADER SECTION STYLE ================= */
 
 .hero {
-  padding: 1rem 7%;
+  padding: 1rem 12%;
   background: #fff7f2;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar {
-  padding: 2rem 7%;
+  padding: 2rem 12%;
   background: #fff;
   
   display: flex;
@@ -122,24 +122,24 @@ body {
 }
 
 .home-content h3 {
-  font-size: 3.2rem;
-  font-size: 700;
-  line-height: .3;
+  font-size: 1.7rem;
+  font-weight: 400;
   color: #fff;
 
 }
 
 .home-content h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
-  margin-bottom: .3rem;
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
   color: #fff;
 }
 
-.home-content p {
-  font-size: 1.6rem;
-  color: #fff;
-  font-weight: 400;
+.home-content h2 {
+  font-size: 4.7rem;
+  color: #f60;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .home-content .social-media a {
@@ -148,21 +148,25 @@ body {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background: #fff;
-  border: .2rem solid #f60;
+  /* background: transparent; */
+  border: .2rem solid #fff;
   border-radius: 50%;
   box-shadow: 0 .2rem .5rem #000;
   font-size: 2rem;
-  color: #f60;
+  color: #fff;
   margin: 2.5rem 1.5rem 3rem 0;
 
   transition: .5s ease;
 }
 
-.home-content .social-media a:hover {
+.social-media a svg {
+  background: transparent;
+}
+
+/* .home-content .social-media a:hover {
   background: #f60;
   color: #fff;
-}
+} */
 
 .home-content .btn-cv {
   display: inline-block;
@@ -199,7 +203,7 @@ body {
 /* ============================ ABOUT SECTION STYLE =========================== */
 
 .about {
-  padding: 4rem 7%;
+  padding: 4rem 12%;
 
 }
 
@@ -267,10 +271,10 @@ span {
   background: #f60;
 }
 
-/* =============== PROYECTS SECTION STYLE =============== */
+/* ==================== PROYECTS SECTION STYLE ===================== */
 
 .proyects {
-  padding: 4rem 7%;
+  padding: 4rem 12%;
   background: #fff7f2;
 }
 
@@ -282,68 +286,80 @@ span {
 /*----- grid -----*/
 
 .proyects .proyects-container {
-  display: flex;
-  gap: 2rem;
   margin-top: 2rem;
 }
 
 .proyects-container .proyects-grid {
-  width: 50%;
-  height: 550px;
-
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: 
-  "element1 element1 element2 element2"
-  "element1 element1 element2 element2"
-  "element3 element3 element3 element3"
-  "element3 element3 element3 element3"
-  ;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  
   gap: 2rem;
 }
 
-.proyects-grid .proyects-slide {
+.proyects-grid .proyects-card {
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   background: #fff;
   gap: 2rem;
 }
 
-.proyects-grid .proyects-slide .div-img {
+.proyects-grid .proyects-card .div-img {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-.proyects-grid .proyects-slide .div-img img {
+.proyects-grid .proyects-card .div-img img {
   width: 100%;
   object-fit: cover;
   display: block;
 }
 
-.proyects-grid .item-1 {
-  grid-area: element1;
-  flex-direction: column;
-}
-
-.proyects-grid .item-2 {
-  grid-area: element2;
-  flex-direction: column;
-}
-
-.proyects-grid .item-3 {
-  grid-area: element3;
-}
-
-.proyects-grid .item-3 .div-text {
+.proyects-card .card-body {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  gap: 1rem;
+}
+
+.card-body .card-title {
+  font-size: 1.6rem;
+}
+
+.card-body .card-text {
+  font-size: 1.2rem;
+}
+
+.card-body .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-body .technologies .technologies-icons {
+  display: flex;
+  padding: .5rem 1rem;
+  background-color: #fff7f2;
+}
+
+.card-body .proyects-link {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  background: #f60;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 
+.card-body .proyects-link:hover {
+ 
+}
 
 /* @media (min-with:700px){
 
@@ -467,7 +483,7 @@ span {
 /* ============================== SKILLS SECTION STYLE =======================================  */
 
 .skills {
-  padding: 4rem 7%;
+  padding: 4rem 12%;
   background: #fff;
 }
 
@@ -493,7 +509,9 @@ span {
 }
 
 .hex-wrapper {
-  filter: drop-shadow(0 4px 8px rgba(50, 50, 93, 0.12));
+  /* filter: drop-shadow(0 4px 8px rgba(50, 50, 93, 0.12)); */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 15px; */
+  filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.15) );
 
   pointer-events: none; /* evita que capte el hover */
   position: relative;
@@ -570,25 +588,26 @@ span {
 
 /* ------ frontend ------ */
 
-.skills-grid > .hex-wrapper:nth-child(1) svg { 
+.skills-category .front > .hex-wrapper:nth-child(1) svg {
   color: #E34F26; 
 }
 
-.skills-grid > .hex-wrapper:nth-child(2) svg { 
+.skills-category .front > .hex-wrapper:nth-child(2) svg {
   color: #264de4; 
 }
 
-.skills-grid > .hex-wrapper:nth-child(3) svg { 
+.skills-category .front > .hex-wrapper:nth-child(3) svg {
   color: #f7df1e; 
 }
 
-.skills-grid > .hex-wrapper:nth-child(4) svg { 
+.skills-category .front > .hex-wrapper:nth-child(4) svg {
   color: #61dafb; 
 }
 
-.skills-grid > .hex-wrapper:nth-child(5) svg { 
+.skills-category .front > .hex-wrapper:nth-child(5) svg {
   color: #563d7c; 
 }
+
 
 /* ------ backend ------ */
 
@@ -638,10 +657,10 @@ span {
 }
 
 
-/* =============== CONTACT SECTION STYLE ===============  */
+/* ============================= CONTACT SECTION STYLE ==============================  */
 
 .contact {
-  padding: 4rem 20%;
+  padding: 4rem 12%;
   background: #fff7f2;
   
 }
@@ -675,24 +694,6 @@ span {
   max-width: 60%;
   height: auto;
 }  
-
-/**/
-.home-content .social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: #fff;
-  border: .2rem solid #f60;
-  border-radius: 50%;
-  box-shadow: 0 .2rem .5rem #000;
-  font-size: 2rem;
-  color: #f60;
-  margin: 2.5rem 1.5rem 3rem 0;
-
-  transition: .5s ease;
-}
 
 /*----- form ----- */
 
@@ -783,7 +784,7 @@ span {
   background: #f60;
 }
 
-/* =============== FOOTER SECTION STYLE ===============  */
+/* ================================= FOOTER SECTION STYLE ====================================  */
 
 .footer {
   display: flex;

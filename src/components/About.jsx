@@ -21,11 +21,13 @@ export default function About() {
           
           <p>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
             Trabajo con <span>React, Redux, Java (Spring Boot)</span>. 
-            Tengo experiencia construyendo e-commerce funcionales desde cero, integrando APIs REST, 
-            control de sesiones, manejo de estado global y despliegue en entornos locales.
+            
           </p>
 
-          <p>Recientemente profundicé en arquitectura de microservicios, usando herramientas como Spring Cloud, 
+          <p>Tengo experiencia construyendo e-commerce funcionales desde cero, integrando APIs REST, 
+          control de sesiones, manejo de estado global y despliegue en entornos locales.</p>
+
+          <p>Recientemente profundicé en arquitectura de <span>microservicios</span>, usando herramientas como Spring Cloud, 
             Docker, Kubernetes, RabbitMQ, Kafka, Prometheus, Grafana y OAuth2, enfocandome en el desarrollo 
             de sistemas distribuidos, resilientes, escalables y seguros.
           </p>
