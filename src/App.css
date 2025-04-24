@@ -680,11 +680,10 @@ span {
 .contact-social-media .linkedin-link {
   max-width: 100%;
   padding: 2rem;
-  /* background: #0077B5; */
   background: #2D6EAE;
 }
 
-.contact-container a img {
+.contact-container .linkedin-link svg {
   max-width: 60%;
   height: auto;
 }
@@ -692,12 +691,12 @@ span {
 .contact-social-media .github-link {
   max-width: 100%;
   padding: 2rem;
-  /* background: #0077B5; */
-  background: #fff;
+  background: #181717 ;
 }
 
-.contact-social-media .github-link img {
-  color: #fff;
+.contact-social-media .github-link svg {
+  max-width: 60%;
+  height: auto;
 }
 
 /*----- form ----- */

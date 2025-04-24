@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { LinkedinLogo } from '../icons/SocialMedia';
+import { LinkedinLogo, GithubLogo } from '../icons/SocialMedia';
 
 
 const initialForm = {
@@ -51,7 +51,8 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="github-link"
             >
-              <img src="/images/social-media/github.png" alt="" />
+              {/* <img src="/images/social-media/github.png" alt="" /> */}
+              <GithubLogo />
           </a> 
         </div>
           
