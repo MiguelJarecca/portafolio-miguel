@@ -42,7 +42,7 @@ export default function Skills() {
         </div>
 
         <h3>Otros</h3>
-        <div className="skills-grid">
+        <div className="skills-grid others">
           { otherSkills.map(({ name, Icon }) => (
               <div className="hex-wrapper" key={name}>
                 <div className="hex">

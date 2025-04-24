@@ -550,12 +550,13 @@ span {
 .tooltip {
   position: absolute;
   bottom: 80%;
-  left: 50%;
-  background: black;
-  color: white;
-  padding: 6px 10px;
+  left: 60%;
+  background: #fff;
+  color: #000;
+  padding: .6rem 1rem;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-weight: 400;
   white-space: nowrap;
   z-index: 10;
 
@@ -611,51 +612,43 @@ span {
 
 /* ------ backend ------ */
 
-.skills-grid > .hex:nth-child(1) svg { 
-  color: #8B4513; 
-}
-
-.skills-grid > .hex:nth-child(2) svg { 
+.skills-category .backend > .hex-wrapper:nth-child(2) svg {
   color: #6db33f; 
 }
 
-.skills-grid > .hex:nth-child(3) svg { 
-  color: #00758f; 
-}
+/* ------ others ------ */
 
-
-/* ------ otros ------ */
-
-.skills-grid > .hex:nth-child(1) svg { 
+.skills-category .others > .hex-wrapper:nth-child(1) svg {
   color: #2496ED; 
 }
 
-.skills-grid > .hex:nth-child(2) svg { 
+.skills-category .others > .hex-wrapper:nth-child(2) svg {
   color: #326CE5; 
 }
 
-.skills-grid > .hex:nth-child(3) svg { 
+.skills-category .others > .hex-wrapper:nth-child(3) svg {
   color: #85EA2D; 
 }
 
-.skills-grid > .hex:nth-child(4) svg { 
-  color: #00758f; 
+.skills-category .others > .hex-wrapper:nth-child(4) svg {
+  color: #EF5B25; 
 }
 
-.skills-grid > .hex:nth-child(5) svg { 
+.skills-category .others > .hex-wrapper:nth-child(5) svg {
   color: #181717; 
 }
 
-.skills-grid > .hex:nth-child(6) svg { 
+.skills-category .others > .hex-wrapper:nth-child(6) svg {
   color: #181717 
 }
-.skills-grid > .hex:nth-child(7) svg { 
+
+.skills-category .others > .hex-wrapper:nth-child(7) svg {
   color: #000; 
 }
-.skills-grid > .hex:nth-child(8) svg { 
+
+.skills-category .others > .hex-wrapper:nth-child(8) svg {
   color: #007ACC; 
 }
-
 
 /* ============================= CONTACT SECTION STYLE ==============================  */
 
@@ -681,19 +674,31 @@ span {
   text-align: center;
   width: 100%;
   height: auto;
-  gap: 2rem;
+  gap: 4rem;
 }
 
-.contact-social-media a {
+.contact-social-media .linkedin-link {
   max-width: 100%;
   padding: 2rem;
-  background: #fff;
+  /* background: #0077B5; */
+  background: #2D6EAE;
 }
 
 .contact-container a img {
   max-width: 60%;
   height: auto;
-}  
+}
+
+.contact-social-media .github-link {
+  max-width: 100%;
+  padding: 2rem;
+  /* background: #0077B5; */
+  background: #fff;
+}
+
+.contact-social-media .github-link img {
+  color: #fff;
+}
 
 /*----- form ----- */
 

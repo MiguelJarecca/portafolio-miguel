@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import { LinkedinLogo } from '../icons/SocialMedia';
 
-import { ReactIcon } from '../icons/SkillsIcons';
 
 const initialForm = {
   name: '',
@@ -42,7 +42,8 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="linkedin-link"
             >
-              <img src="/images/social-media/linkedin.png" alt="" />
+              {/* <img src="/images/social-media/linkedin.png" alt="" /> */}
+              <LinkedinLogo />
           </a>
 
           <a href="https://github.com/MiguelJarecca"

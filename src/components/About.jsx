@@ -20,7 +20,7 @@ export default function About() {
           <h3>Hola, Estoy aqui para ayudarte en tu proximo proyecto</h3>
           
           <p>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
-            Trabajo con <span>React, Redux, Java (Spring Boot)</span>. 
+            Trabajo con <span>React, Java (Spring Boot) y MySQL</span>. 
             
           </p>
 
