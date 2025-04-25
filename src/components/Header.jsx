@@ -1,9 +1,9 @@
 import React from 'react'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faMoon, faSun} from '@fortawesome/free-regular-svg-icons'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react';
+import { Moon, Sunny } from '../icons/Icons';
 
 export default function Header() {
 
@@ -81,7 +81,7 @@ export default function Header() {
         {/* Controles de tema y menú */}
         <div className="navbar-controls">
           <button className="theme-toggle" onClick={handleThemeClick}>
-            <FontAwesomeIcon icon={darkTheme ? faSun : faMoon} />
+            {darkTheme ? <Moon /> : <Sunny />}
           </button>
 
           <button className="menu-toggle" onClick={handleMenuClick}>
