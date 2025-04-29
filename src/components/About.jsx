@@ -24,8 +24,8 @@ export default function About() {
             
           </p>
 
-          <p>Tengo experiencia construyendo e-commerce funcionales desde cero, integrando APIs REST, 
-          control de sesiones, manejo de estado global y despliegue en entornos locales.</p>
+          {/* <p>Tengo experiencia construyendo e-commerce funcionales desde cero, integrando APIs REST, 
+          control de sesiones, manejo de estado global y despliegue en entornos locales.</p> */}
 
           <p>Recientemente profundicé en arquitectura de <span>microservicios</span>, usando herramientas como Spring Cloud, 
             Docker, Kubernetes, RabbitMQ, Kafka, Prometheus, Grafana y OAuth2, enfocandome en el desarrollo 

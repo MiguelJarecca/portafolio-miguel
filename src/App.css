@@ -8,19 +8,61 @@
   font-family: 'Poppins', sans-serif;
 }
 
-:root {
-  --bg-color: #fdfdfd;
-  --text-color: #333;
-  --main-color: #754ef9;
-  --white-color: #fdfdfd;
-  --shadow-color: rgba(0, 0, 0, .2);
+/* Custom properties */
+/* ============================================================ */
+
+:root[data-theme="light"] {
+  --bg-primary: #eff0f3;
+  --bg-secondary: #fffffe;
+
+  --bg-home: #47529e;
+  --bg-header: #fdfdfd;
+  --bg-footer: #47529e;
+  --bg-card: #fdfdfd;
+
+  --color-primary: #0d0d0d;
+  --color-secondary: #2a2a2a;
+  --color-accent: #f60;
+
+  --color-error: #ef4444;
+  --color-success: #10b981;
+
+  --color-text-primary: #2a2a2a;
+  --color-text-secondary: #6b7280;
+  --color-text-inverted: #ffffff;
+
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: var(--color-text-inverted);
+
+  --button-secondary-bg: var(--color-secondary);
+  --button-secondary-text: var(--color-text-inverted);
+
+  --icon-socials: #f60;
+	--icon-socials-hover: #77757e;
 }
-/* 
-.dark-mode {
-  --bg-color: #0b061f;
-  --text-color: #fdfdfd;
-  --shadow-color: rgba(0, 0, 0, .7);
-} */
+
+:root[data-theme="dark"] {
+  --bg-primary: #0f0e17;
+  --bg-secondary: #444b58;
+
+  --bg-home: #47529e;
+  --bg-header: #0f0e17;
+  --bg-footer: #47529e;
+  --bg-card: #fdfdfd;
+
+  --color-primary: #fffffe;
+  --color-secondary: #e3e3e3;
+  --color-accent: #f60;
+
+  --color-text-primary: #0d0d0d;
+  --color-text-secondary: #2a2a2a;
+  --color-text-inverted: #ffffff;
+
+  --icon-socials: #f60;
+	--icon-socials-hover: #77757e;
+
+
+}
 
 html {
   font-size: 62.5%;
@@ -28,24 +70,41 @@ html {
 }
 
 body {
-  /* background-color: var(--bg-color); */
-  /* color: var(--text-color); */
+ 
 }
 
-/* ================ HEADER SECTION STYLE ================= */
+.heading {
+  font-size: 4.5rem;
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+span {
+  color: var(--color-accent);
+}
+
+
+/* Hero */
+/* ============================================================ */
 
 .hero {
   padding: 1rem 12%;
-  background: #fff7f2;
+  background: var(--bg-secondary);
 }
 
 .hero h3 {
   font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 500;
 }
+
+/* Navbar */
+/* ============================================================ */
 
 .navbar {
   padding: 2rem 12%;
-  background: #fff;
+  background: var(--bg-primary);
   
   display: flex;
   align-items: center;
@@ -56,14 +115,10 @@ body {
   z-index: 10;
 }
 
-.header-nav .div-links {
-
-}
-
 .navbar .navbar-links a {
   position: relative;
   font-size: 1.5rem;
-  color: #000;
+  color: var(--color-primary);
   font-weight: 400;
   margin-right: 3.5rem;
   text-decoration: none;
@@ -80,35 +135,34 @@ body {
   background: #f60;
 }
 
-.navbar .navbar-controls {
-  /* display: flex; */
-}
-
 .navbar-controls .theme-toggle {
-  background: #fff;
+  background: var(--bg-primary);
   border: none;
 }
 
+
 .theme-toggle svg {
-  font-size: 2.4rem;
-  color: #000;
+  font-size: 2.7rem;
+  color: var(--color-primary);
   cursor: pointer;
   padding: .2rem;
 }
+
 .menu-toggle {
  display: none;
 }
 
 .menu-toggle svg {
   font-size: 2.7rem;
-  color: #000;
+  color: var(--color-primary);
 }
 
-/* =============== HOME SECTION STYLE =============== */
+/* Home */
+/* ============================================================ */
 
 .home {
-  background-image: url(/images/bg-pattern.png);
-  background-color: #47529e;
+  /* background-image: url(/images/bg-pattern.png); */
+  background-color: var(--bg-primary);
   background-blend-mode: multiply;
 
   display: flex;
@@ -124,7 +178,7 @@ body {
 .home-content h3 {
   font-size: 1.7rem;
   font-weight: 400;
-  color: #fff;
+  color: var(--color-text-primary);
 
 }
 
@@ -132,12 +186,12 @@ body {
   font-size: 2.7rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--color-text-primary);
 }
 
 .home-content h2 {
   font-size: 4.7rem;
-  color: #f60;
+  color: var(--color-primary);
   font-weight: 600;
   line-height: 1;
 }
@@ -146,17 +200,17 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
-  height: 4rem;
-  /* background: transparent; */
-  border: .2rem solid #fff;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: .2rem solid var(--icon-socials);
   border-radius: 50%;
   box-shadow: 0 .2rem .5rem #000;
   font-size: 2rem;
-  color: #fff;
+  color: var(--icon-socials);
   margin: 2.5rem 1.5rem 3rem 0;
 
   transition: .5s ease;
+  background: var(--bg-primary);
 }
 
 .social-media a svg {
@@ -200,15 +254,13 @@ body {
   height: 40rem;
 }
 
-/* ============================ ABOUT SECTION STYLE =========================== */
+/* About */
+/* ============================================================ */
 
 .about {
   padding: 4rem 12%;
+  background: var(--bg-secondary);
 
-}
-
-span {
-  color: #f60;
 }
 
 .about .about-container {
@@ -219,28 +271,24 @@ span {
   margin-top: 2rem;
 }
 
-.heading {
-  font-size: 4.5rem;
-  text-align: center;
-}
-
 .about-img img {
   width: 25vw;
-  background: var(--bg-color);
-  /* border-radius: 2rem; */
   box-shadow: 0 .1rem .5rem var(--shadow-color);
-  /* padding: 1rem; */
-  /* border: .8rem solid var(--main-color); */
-  /* border-bottom: .8rem solid var(--main-color); */
+  
 }
 
 .about-content h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  font-weight: 400;
   margin-top: 2rem;
+  color: var(--color-text-secondary);
 }
 
 .about-content p span {
@@ -250,7 +298,7 @@ span {
 .about-content .about-link {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .about-content .about-link a {
@@ -265,17 +313,19 @@ span {
   font-weight: 600;
 
   cursor: pointer;
+  transition: .5s ease;
 }
 
 .about-content .about-link a:hover {
   background: #f60;
 }
 
-/* ==================== PROYECTS SECTION STYLE ===================== */
+/* Projects */
+/* ============================================================ */
 
 .proyects {
   padding: 4rem 12%;
-  background: #fff7f2;
+  background: var(--bg-primary);
 }
 
 .proyects h2 {
