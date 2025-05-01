@@ -1,13 +1,11 @@
 import React from 'react'
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react';
 import { Close, Menu, Moon, Sunny } from '../icons/Icons';
 
 export default function Header() {
 
-    //============== Menu ============
+  //============== Menu ============
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuClick = () => {
@@ -19,19 +17,20 @@ export default function Header() {
   };
 
   //============== Dark Theme ============
- const [darkTheme, setDarkTheme] = useState(false);
+
+  const LocalStorageTheme = localStorage.getItem('theme');
+  const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+  const [theme, setTheme] = useState(LocalStorageTheme || systemColorScheme || 'light');
 
   const handleThemeClick = () => {
-    setDarkTheme(!darkTheme)
+    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   useEffect(() => {
-    if (darkTheme) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-  }, [darkTheme]); 
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]); 
  
   //============== scroll section active liks =============
   let sections = document.querySelectorAll('section');
@@ -81,7 +80,7 @@ export default function Header() {
         {/* Controles de tema y menú */}
         <div className="navbar-controls">
           <button className="theme-toggle" onClick={handleThemeClick}>
-            {darkTheme ? <Moon /> : <Sunny />}
+            {(theme === 'light') ? <Moon /> : <Sunny />}
           </button>
 
           <button className="menu-toggle" onClick={handleMenuClick}>
