@@ -12,10 +12,10 @@ export default function Home() {
 
     <section className='home' id='home'>
       <div className="home-content">
-          <h3>Hola, Soy</h3>
-          <h1>Miguel Jarecca</h1>
+          <p>Hola, Soy</p>
+          <h2>Miguel Jarecca</h2>
 
-          <h2>Desarrollador Web Full Stack</h2>
+          <h1>Desarrollador Web Full Stack</h1>
 
           <div className="social-media">
             <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 

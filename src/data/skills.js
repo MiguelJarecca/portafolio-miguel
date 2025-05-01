@@ -29,5 +29,5 @@ export const frontendSkills = [
     { name: 'Github', Icon: GithubIcon },
 
     { name: 'Intellij IDEA', Icon: IntellijideaIcon },
-    { name: 'Vidual Studio Code ', Icon: VisualStudIcon },
+    { name: 'Visual Studio Code ', Icon: VisualStudIcon },
   ];

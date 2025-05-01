@@ -22,15 +22,15 @@
   --bg-card-tag: #eff0f3;
 
   --color-primary: #0d0d0d;
-  --color-secondary: #2a2a2a;
+  --color-secondary: #6b7280;
   --color-accent: #f60;
 
   --color-error: #ef4444;
   --color-success: #10b981;
 
-  --color-text-primary: #2a2a2a;
+  --color-text-primary: #0d0d0d;
   --color-text-secondary: #6b7280;
-  --color-text-inverted: #ffffff;
+  --color-text-inverted: #2a2a2a;
 
   --button-primary-bg: #0d0d0d;
   --button-primary-text: #fffffe;
@@ -74,7 +74,7 @@
 
   --color-text-primary: #fffffe;
   --color-text-secondary: #94a1b2;
-  --color-text-inverted: #ffffff;
+  --color-text-inverted: #cacddc;
 
   --button-primary-bg: #f60;
   --button-primary-text: #fffffe;
@@ -152,12 +152,16 @@ span {
   z-index: 10;
 }
 
+.navbar .navbar-links {
+  display: flex;
+  gap: 3.5rem;
+}
+
 .navbar .navbar-links a {
   position: relative;
   font-size: 1.5rem;
   color: var(--color-primary);
   font-weight: 400;
-  margin-right: 3.5rem;
   text-decoration: none;
 
 }
@@ -172,25 +176,27 @@ span {
   background: #f60;
 }
 
-.navbar-controls .theme-toggle {
+.navbar .navbar-controls {
+  display: flex;
+  margin: 0;
+}
+
+.theme-toggle,
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: var(--bg-primary);
   border: none;
-}
-
-
-.theme-toggle svg {
-  font-size: 2.7rem;
-  color: var(--color-primary);
   cursor: pointer;
-  padding: .2rem;
 }
 
-.menu-toggle {
- display: none;
-}
-
+.theme-toggle svg,
 .menu-toggle svg {
-  font-size: 2.7rem;
+  display: block;
+  width: 2.7rem;
+  height: 2.7rem;
   color: var(--color-primary);
 }
 
@@ -212,25 +218,29 @@ span {
   max-width: 45rem;
 }
 
-.home-content h3 {
+.home-content p {
   font-size: 1.7rem;
   font-weight: 400;
   color: var(--color-secondary);
 
 }
 
-.home-content h1 {
+.home-content h2 {
   font-size: 2.7rem;
   font-weight: 400;
   margin-bottom: 1rem;
   color: var(--color-secondary);
 }
 
-.home-content h2 {
+.home-content h1 {
   font-size: 4.7rem;
   color: var(--color-primary);
   font-weight: 600;
   line-height: 1;
+}
+
+.home-content .social-media {
+  margin: 2.5rem 0 3rem 0;
 }
 
 .home-content .social-media a {
@@ -244,7 +254,7 @@ span {
   box-shadow: 0 .2rem .5rem #000;
   font-size: 2rem;
   color: var(--icon-socials-svg-color);
-  margin: 2.5rem 1.5rem 3rem 0;
+  margin-right: 1.5rem;
 
   transition: .5s ease;
   background: var(--icon-socials-bg);
@@ -270,6 +280,7 @@ span {
   border-radius: 3px;
   border: 2px solid var(--button-primary-border);
   text-decoration: none;
+  cursor: pointer;
 
   transition: .5s ease;
 }
@@ -287,8 +298,9 @@ span {
 }
 
 .picture-container img {
+  max-width: 100%;
   width: 40rem;
-  height: 40rem;
+  height: auto;
 }
 
 /* About */
@@ -339,8 +351,6 @@ span {
 }
 
 .about-content .about-link a {
-  /* clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 12px); */
-
   font-size: 1.6rem;
   letter-spacing: .1rem;
   text-decoration: none;
@@ -359,8 +369,6 @@ span {
   background: var(--button-secondary-bg-hover);
   color: var(--button-secondary-text-hover);
   border-color: var(--button-secondary-border-hover);
-
-  /* border: 1px solid var(--button-secondary-hover); */
 }
 
 /* Projects */
@@ -558,7 +566,8 @@ span {
   background: rgb(230, 92, 1);
 }
 
-/* ============================== SKILLS SECTION STYLE =======================================  */
+/* Skills */
+/* ============================================================ */
 
 .skills {
   padding: 8rem 12%;
@@ -588,19 +597,39 @@ span {
 }
 
 .hex-wrapper {
-  /* filter: drop-shadow(0 4px 8px rgba(50, 50, 93, 0.12)); */
+  filter: drop-shadow (0 5px 10px -5px rgb(0 0 0 / 30%));
   /* box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 15px; */
   /* filter: drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.15) ); */
+  /* box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%); */
 
   pointer-events: none; /* evita que capte el hover */
   position: relative;
   overflow: visible;
+
+  width: 120px;
+  aspect-ratio: 1;
+}
+
+.hex-border {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+  background-color: var(--color-text-secondary);
+  z-index: 0;
 }
 
 .hex {
   width: 120px;
   aspect-ratio: 1;
-  background-color: var(--bg-primary);
+  /* background-color: var(--bg-primary); */
+  /* background: #242629; */
   clip-path: polygon(
     50% 0%,
     93% 25%,
@@ -616,6 +645,13 @@ span {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
+
+  background-color: var(--bg-secondary);
+  z-index: 1;
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+
 }
 
 .hex-content {
@@ -730,7 +766,8 @@ span {
   color: #007ACC; 
 }
 
-/* ============================= CONTACT SECTION STYLE ==============================  */
+/* Contact */
+/* ============================================================ */
 
 .contact {
   padding: 8rem 12%;
@@ -869,7 +906,8 @@ span {
   background: #f60;
 }
 
-/* ================================= FOOTER SECTION STYLE ====================================  */
+/* Footer */
+/* ============================================================ */
 
 .footer {
   display: flex;
@@ -878,6 +916,20 @@ span {
   flex-wrap: wrap;
   padding: 2.5rem 12%;
   background: var(--bg-footer);
+
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 12%;
+  right: 12%;
+  height: 3px;
+  background: #f60;
+
+
 }
 
 .footer-text p {
@@ -907,13 +959,15 @@ span {
   border-color: var(--button-primary-border-hover);
 }
 
-/* ============================  COURSES PAGE =========================== */
+/* Courses page */
+/* ============================================================ */
 
 .main-courses-page {
-  padding: 2rem 7%;
-
+  padding: 2rem 12%;
+  background: var(--bg-primary);
 }
-/* ---------- course-list -----------*/
+
+/* ---- course-list ---- */
 
 .course-list {
 
@@ -921,6 +975,10 @@ span {
 
 .course-list h2 {
   font-size: 3rem;
+  margin: 0;
+  font-size: 4.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .course-list .course-container {
@@ -928,7 +986,7 @@ span {
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
-  padding: 0 6rem;
+  border-radius: 3px;
 }
 
 /* Fondo oscuro del modal */
@@ -938,10 +996,10 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;    /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
+  align-items: center;
+  justify-content: center;
   z-index: 100;
   animation: fadeIn 0.3s ease;
 }
@@ -997,23 +1055,22 @@ span {
 
 .course-card {
   display: flex;
-  border: 1px solid #d1d2e0;
   padding: 1rem;
   gap: 4rem;
+  background: var(--bg-card);
 }
 
 .course-card .course-content {
   flex: 1;
   max-width: 30rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
 }
 
 .course-content .course-image {
   width: 100%;
-  max-width: 30rem;
   height: auto;
   object-fit: cover;
 }
@@ -1026,7 +1083,7 @@ span {
 
 .course-content .course-info .course-title {
   font-size: 1.6rem;
-  color: #303141;
+  color: var(--color-primary);
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0;
@@ -1036,22 +1093,35 @@ span {
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.3rem;
-  color: #303141;
-  /* white-space: nowrap; */
+  color: var(--color-text-inverted);
 }
 
 .course-content .course-info .course-instructor {
   font-weight: 400;
   line-height: 1.4;
   font-size: 1.3rem;
-  /* color: #e2e8f0; */
-  color: #707070;
+  color: var(--color-text-secondary);
 }
 
 .course-content .certi-button {
-  padding: .8rem;
-  font-size: 1.6;
-  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  padding: 1.2rem;
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  border: 1px solid var(--button-secondary-border);
+  border-radius: 3px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.course-content .certi-button:hover {
+  background: var(--button-secondary-bg-hover);
+  color: var(--button-secondary-text-hover);
+  border-color: var(--button-secondary-border-hover);
 }
 
 .course-card .course-description {
@@ -1063,6 +1133,7 @@ span {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0;
+  color: var(--color-text-primary);
 }
 
 .course-description ul {
@@ -1078,10 +1149,14 @@ span {
   font-weight: 400;
   line-height: 1.8;
   font-size: 1.4rem;
-  color: #303141;
-
+  color: var(--color-text-secondary);
 }
 
+.course-description li svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  flex-shrink: 0;
+}
 
 /* =============== BREACKPOINTS =============== */
 

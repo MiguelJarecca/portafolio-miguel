@@ -3,7 +3,7 @@ import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react';
-import { Moon, Sunny } from '../icons/Icons';
+import { Close, Menu, Moon, Sunny } from '../icons/Icons';
 
 export default function Header() {
 
@@ -85,7 +85,7 @@ export default function Header() {
           </button>
 
           <button className="menu-toggle" onClick={handleMenuClick}>
-            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
+            {menuOpen ? <Menu /> : <Close />}
           </button>
         </div>
 

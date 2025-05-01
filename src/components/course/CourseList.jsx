@@ -30,7 +30,7 @@ export const CourseList = () => {
 
     <section className="course-list">
       
-      <h2>Mis Cursos</h2>
+      <h2>Mis <span>Cursos</span></h2>
       <div className="course-container">
         {courseList.map(course => (
           <CourseCard key={course.id} course={course} onShowCerti={setSelectedCerti} />

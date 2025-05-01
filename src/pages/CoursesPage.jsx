@@ -1,14 +1,21 @@
 import { CourseList } from "../components/course/CourseList"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 export const CoursesPage = () => {
 
 
     return(
-        <main className="main-courses-page">
+
+        <>
             <Header />
-            <CourseList />
-            
-        </main>
+            <main className="main-courses-page">
+                
+                <CourseList />
+                
+            </main>
+            <Footer />
+        </>
+        
     )
 }

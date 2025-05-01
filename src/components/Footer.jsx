@@ -17,11 +17,9 @@ export default function Footer() {
             <p>Miguel Jarecca Ccallo | {new Date().getFullYear()}</p>
         </div>
 
-        {/* <div className="footer-icon"> */}
-            <button type="button" className='footer-button' onClick={handleScrollToTop}>
-                <ArrowUp />
-            </button>
-        {/* </div> */}
+        <button type="button" className='footer-button' onClick={handleScrollToTop}>
+            <ArrowUp />
+        </button>
     </footer>
 
     )
