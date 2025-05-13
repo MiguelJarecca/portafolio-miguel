@@ -1,4 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;700&display=swap');
+/* Poppins-fonts */
+/* ============================================================ */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -139,7 +195,7 @@ span {
 /* Navbar */
 /* ============================================================ */
 
-.navbar {
+.header {
   padding: 2rem 12%;
   background: var(--bg-primary);
   
@@ -152,12 +208,12 @@ span {
   z-index: 10;
 }
 
-.navbar .navbar-links {
+.header .navbar-links {
   display: flex;
   gap: 3.5rem;
 }
 
-.navbar .navbar-links a {
+.header .navbar-links a {
   position: relative;
   font-size: 1.5rem;
   color: var(--color-primary);
@@ -166,7 +222,7 @@ span {
 
 }
 
-.navbar .navbar-links a.active::before {
+.header .navbar-links a.active::before {
   content: '';
   position: absolute;
   left: 0;
@@ -176,7 +232,7 @@ span {
   background: #f60;
 }
 
-.navbar .navbar-controls {
+.header .navbar-controls {
   display: flex;
   margin: 0;
 }
@@ -379,13 +435,8 @@ span {
   background: var(--bg-primary);
 }
 
-/*----- grid -----*/
-
 .proyects .proyects-container {
   margin-top: 2rem;
-}
-
-.proyects-container .proyects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -393,7 +444,7 @@ span {
   gap: 2rem;
 }
 
-.proyects-grid .proyects-card {
+.proyects-container .proyects-card {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -402,13 +453,13 @@ span {
   border-radius: 3px;
 }
 
-.proyects-grid .proyects-card .div-img {
+.proyects-container .proyects-card .div-img {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-.proyects-grid .proyects-card .div-img img {
+.proyects-container .proyects-card .div-img img {
   width: 100%;
   object-fit: cover;
   display: block;
@@ -438,8 +489,13 @@ span {
   gap: 1rem;
 }
 
-.card-body .technologies .technologies-icons {
+.technologies .technologies-icons {
   display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 1.2rem;
   padding: .5rem 1rem;
   background-color: var(--bg-card-tag);
 }
@@ -462,109 +518,58 @@ span {
  
 }
 
-
-/*----- grid-info -----*/
-
-.proyects-container .proyects-info {
-  background: #fff;
-  padding: 2rem 4rem;
-
-}
-
-.proyects-info .proyects-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.proyects-content ul {
-  list-style: none;
-  padding-left: 0;
-
-}
-
-.proyects-content ul li {
-  font-size: 1.4rem;
-  padding-left: 2rem;
-  text-indent: -2.5rem;
-  line-height: 1.6;
-}
-
-.proyects-content ul li svg {
-  vertical-align: middle;
-  margin-right: 0.5rem;
-}
-
-.proyects-info h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-/*--- grid-info-technologies ---*/
-
-.proyects-content .technologies {
-  display: flex;
-  margin-right: auto;
-  gap: 10px;
-}
-
-.technologies .technologies-icons {
-  display: flex;
-  border-radius: 2px;
-  padding: 4px 8px;
-  background: #d6d2d2;
-  gap: 10px;
-}
-
-.technologies-icons svg {
-  font-size: 1.5rem;
-}
-
-.technologies-icons p {
-  font-size: 1.2rem;
-}
-
-.technologies-icons:nth-child(1) {
-  color: #E34F26; 
+/*card-1-icons*/
+.technologies .icons-1:nth-child(1) {
+  color: #61dafb; 
 }  
 
-.technologies-icons:nth-child(2) {
-  color: #264de4;
+.technologies .icons-1:nth-child(2) {
+  color: #f89820;
 }  
 
-.technologies-icons:nth-child(3) {
-  color: #f7df1e;
+.technologies .icons-1:nth-child(3) {
+  color: #6DB33F;
 }  
 
-.technologies-icons:nth-child(4) {
-  color: #8B4513;
+.technologies .icons-1:nth-child(4) {
+  color: #00758F; 
 } 
 
-.technologies-icons:nth-child(5) {
+
+/*card-2-icons*/ 
+.technologies .icons-2:nth-child(1) {
   color: #61dafb; 
 } 
 
-.proyects-content a {
-  display: inline-block;
-  padding: 1.2rem 15.8rem;
-  background: #f60;
-  align-self: flex-start;
-  margin: 0 auto;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  border: 2px solid #f60;
-  margin-top: 5rem;
+.technologies .icons-2:nth-child(2) {
+  color: #f89820;
+} 
 
-  transition: .5s ease;
-}
+.technologies .icons-2:nth-child(3) {
+  color: #6DB33F;
+}  
 
-.proyects-content a:hover {
-  background: rgb(230, 92, 1);
-}
+/*card-3-icons*/
+.technologies .icons-3:nth-child(1) {
+  color: #E34F26; 
+}  
+
+.technologies .icons-3:nth-child(2) {
+  color: #264de4;
+}  
+
+.technologies .icons-3:nth-child(3) {
+  color: #f7df1e;
+}  
+
+.technologies .icons-3:nth-child(4) {
+  color: #61dafb; 
+} 
+
+.technologies .icons-3:nth-child(5) {
+  color: #f89820;
+} 
+
 
 /* Skills */
 /* ============================================================ */
@@ -790,7 +795,7 @@ span {
   text-align: center;
   width: 100%;
   height: auto;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .contact-social-media .linkedin-link {
@@ -990,6 +995,7 @@ span {
 }
 
 /* Fondo oscuro del modal */
+
 .modal {
   position: fixed;
   top: 0;
@@ -1058,6 +1064,7 @@ span {
   padding: 1rem;
   gap: 4rem;
   background: var(--bg-card);
+  border-radius: 3px;
 }
 
 .course-card .course-content {
@@ -1073,6 +1080,7 @@ span {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 3px;
 }
 
 .course-content .course-info {

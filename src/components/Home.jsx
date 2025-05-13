@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
 
-    <section className='home' id='home'>
+    <main className='home'>
       <div className="home-content">
           <p>Hola, Soy</p>
           <h2>Miguel Jarecca</h2>
@@ -43,6 +43,6 @@ export default function Home() {
         <img src="/images/designer.svg" alt="" />
         {/* <img src="/images/vector.jpg" alt="" /> */}
       </picture>
-    </section>
+    </main>
   )
 }

@@ -37,9 +37,17 @@ export default function Header() {
   let navLinks = document.querySelectorAll('header nav a')
 
   window.onscroll = () => {
+
+    let top = window.scrollY;
+
+    if (top === 0) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      document.querySelector('header nav a[href="#home"]').classList.add('active');
+      return;
+    }
+
       sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
+        let offset = sec.offsetTop - 200;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
  
@@ -51,10 +59,6 @@ export default function Header() {
           });
         };
       })
-
-    // Sticky navbar
-    let header = document.querySelector('.header');
-    header.classList.toggle('sticky', window.scrollY > 50);
   };  
 
   return (
@@ -62,20 +66,20 @@ export default function Header() {
     <>
 
       {/* Encabezado */}
-      <header className="hero">
+      <section className="hero" id='home'>
         <h3>Construyo aplicaciones web escalables y eficientes</h3>
-      </header>
+      </section>
       
       {/* Barra de navegación */}
-      <nav className='navbar'>
+      <header className='header'>
 
-        <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+        <nav className={`navbar-links ${menuOpen ? 'active' : ''}`}>
             <a href="#home" className='active' onClick={handleSectionClick} >Inicio</a>
             <a href="#about" onClick={handleSectionClick} >Sobre mí</a>
             <a href="#proyects" onClick={handleSectionClick} >Proyectos</a>
             <a href="#skills" onClick={handleSectionClick} >Habilidades</a>
             <a href="#contact" onClick={handleSectionClick} >Contactame</a>
-        </div>      
+        </nav>      
       
         {/* Controles de tema y menú */}
         <div className="navbar-controls">
@@ -88,7 +92,7 @@ export default function Header() {
           </button>
         </div>
 
-      </nav>
+      </header>
 
     </>
     

@@ -1,10 +1,5 @@
-import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faHtml5,faCss3Alt,faSquareJs,faJava, faReact} from '@fortawesome/free-brands-svg-icons';
-
-import { Check } from "../icons/Icons";
-import { CssIcon, HtmlIcon, JavaIcon, JavascriptIcon, ReactIcon } from '../icons/SkillsIcons';
+import { CssIcon, HtmlIcon, JavaIcon, JavascriptIcon, ReactIcon, MysqlIcon, SpringSecurity } from '../icons/SkillsIcons';
 
 export default function Proyects() {
   return (
@@ -13,89 +8,126 @@ export default function Proyects() {
 
       <div className='proyects-container'>
 
-        <div className="proyects-grid">
+        {/* <div className="proyects-grid"> */}
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/proyects-1.jpg" alt="" />
+              <img src="/images/proyects/escolar-plus.png" alt="" />
             </div>
             <div className="card-body">
               <h5 className= "card-title">Escolar Plus</h5>
-              <p className='card-text'>API Rest de usuarios, CRUD y seguridad web con Spring Boot y Spring Security.</p>
+              <p className='card-text'>Aplicación web de e-commerce especializada en la venta de uniformes escolares.
+                Permite a los usuarios navegar por categorías, agregar productos al carrito y a favoritos.</p>
               <div className="technologies">
+                
+                <div className="technologies-icons icons-1">
+                  <ReactIcon />
+                  <p>React</p>
+                </div>
 
-                <div className="technologies-icons"> 
-                <HtmlIcon />
-                <p>HTML5</p></div>
+                <div className="technologies-icons icons-1">
+                  <JavaIcon />
+                  <p>Java</p>
+                </div>
 
-                <div className="technologies-icons"> 
-                <CssIcon />
-                <p>CSS3</p></div>
+                <div className="technologies-icons icons-1">
+                  <SpringSecurity />
+                  <p>Spring Security</p>
+                </div>
 
-                <div className="technologies-icons"> 
-                  <JavascriptIcon />
-                  <p>Javascript</p>
+                <div className="technologies-icons icons-1"> 
+                  <MysqlIcon />
+                  <p>MySql</p>
                 </div>
                 
-                <div className="technologies-icons">
-                <JavaIcon />
-                <p>Java</p></div>
-                
-                <div className="technologies-icons">
-                <ReactIcon />
-                <p>React</p></div>
               </div>
-              <a href="" className='proyects-link'>Ver en GitHub</a>
+              <a 
+                href="https://github.com/MiguelJarecca/App-cole-uniform.git" 
+                className='proyects-link'
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Ver en GitHub
+              </a>
             </div>
           </div>
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/proyects-1.jpg" alt="" />
+              <img src="/images/proyects/login.png" alt="" />
             </div>
             <div className="card-body">
-              <h5 className= "card-title">Usuarios</h5>
-              <p className='card-text'>API Rest de usuarios, CRUD y seguridad web con Spring Boot y Spring Security.</p>
-              <a href="" className='proyects-link'>Ver en GitHub</a>
+              <h5 className= "card-title">Login Autenticación</h5>
+              <p className='card-text'>API REST segura para gestión de usuarios, con autenticación y autorización 
+                mediante JWT. Desarrollada con Spring Boot y Spring Security.
+              </p>
+              <div className="technologies">
+
+                <div className="technologies-icons icons-2">
+                  <ReactIcon />
+                  <p>React</p>
+                </div>
+                
+                <div className="technologies-icons icons-2">
+                  <JavaIcon />
+                  <p>Java</p>
+                </div>
+
+                <div className="technologies-icons icons-2">
+                  <SpringSecurity />
+                  <p>Spring Security</p>
+                </div>
+                
+              </div>
+              <a 
+                href="https://github.com/MiguelJarecca/Login-Authentication.git" 
+                className='proyects-link'
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Ver en GitHub
+              </a>
             </div>
           </div>
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/proyects-1.jpg" alt="" />
+              <img src="/images/proyects/dark-mode.png" alt="" />
             </div>
             <div className="card-body">
-              <h5 className= "card-title">Shopping Cart</h5>
-              <p className='card-text'>simulador de carro de comprar, incluye: filtrar por tipo de producto, 
-              registro e inicio de sesión y eliminación e inclusión de productos.</p>
+              <h5 className= "card-title">Modo Claro - Oscuro</h5>
+              <p className='card-text'>Un proyecto simple que alterna entre el modo claro y oscuro. 
+                Haciendo clic en el botón para cambiar instantáneamente.</p>
               <div className="technologies">
 
-                <div className="technologies-icons"> 
-                <HtmlIcon />
-                <p>HTML5</p></div>
+                <div className="technologies-icons icons-3"> 
+                  <HtmlIcon />
+                  <p>HTML5</p>
+                </div>
 
-                <div className="technologies-icons"> 
-                <CssIcon />
-                <p>CSS3</p></div>
+                <div className="technologies-icons icons-3"> 
+                  <CssIcon />
+                  <p>CSS3</p>
+                </div>
 
-                <div className="technologies-icons"> 
+                <div className="technologies-icons icons-3"> 
                   <JavascriptIcon />
                   <p>Javascript</p>
                 </div>
                 
-                <div className="technologies-icons">
-                <JavaIcon />
-                <p>Java</p></div>
-                
-                <div className="technologies-icons">
-                <ReactIcon />
-                <p>React</p></div>
               </div>
-              <a href="" className='proyects-link'>Ver en GitHub</a>
+              <a 
+                href="https://github.com/MiguelJarecca/light-dark-toggle.git" 
+                className='proyects-link'
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Ver en GitHub
+              </a>
             </div>
           </div>
 
-          </div>
+          {/* </div> */}
 
         </div>
 
