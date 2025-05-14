@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="skills-grid front">
           {frontendSkills.map(({ name, Icon }) => (
             <div className="hex-wrapper" key={name}>
-              <div class="hex-border"></div>
+              <div className="hex-border"></div>
               <div className="hex">
                 <div className="hex-content">
                   <Icon />
@@ -32,7 +32,7 @@ export default function Skills() {
         <div className="skills-grid backend">
           {backendSkills.map(({ name, Icon }) => (
               <div className="hex-wrapper" key={name}>
-                <div class="hex-border"></div>
+                <div className="hex-border"></div>
                 <div className="hex">
                   <div className="hex-content">
                     <Icon />
@@ -47,7 +47,7 @@ export default function Skills() {
         <div className="skills-grid others">
           { otherSkills.map(({ name, Icon }) => (
               <div className="hex-wrapper" key={name}>
-                <div class="hex-border"></div>
+                <div className="hex-border"></div>
                 <div className="hex">
                   <div className="hex-content">
                     <Icon />

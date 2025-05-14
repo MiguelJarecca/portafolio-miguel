@@ -1,8 +1,5 @@
-import React from 'react'
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
-import {faFacebookF} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
@@ -18,15 +15,12 @@ export default function Home() {
           <h1>Desarrollador Web Full Stack</h1>
 
           <div className="social-media">
-            <a href="https://web.facebook.com/miguel.jareccaccallo.1/?locale=es_LA" 
-               target="_blank"
-               rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebookF}/></a>  
+    
             <a href="https://www.linkedin.com/in/migueljarecca"
                target="_blank"
                rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn}/></a> 
-            <a href="https://github.com/MiguelJarecca"
+            <a href="https://github.com/migueljarecca"
               target="_blank"
               rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub}/></a> 

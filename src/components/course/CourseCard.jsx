@@ -8,7 +8,6 @@ export const CourseCard = ({course, onShowCerti}) => {
   return (
     <div className="course-card">
 
-      <div className="course-content"> 
         <img src={imageCourse} alt={title} className="course-image" />
 
         <div className="course-info">
@@ -21,21 +20,6 @@ export const CourseCard = ({course, onShowCerti}) => {
         <button className="certi-button" onClick={() => onShowCerti(imageCerti)}>
           Ver Certificado
         </button>
-      </div>
-
-      <div className="course-description">
-        <h2>Que aprendi</h2>
-
-        <ul>
-          {topics.map((topic, index) => (
-            <li key={index}>
-              <Check />
-              <p>{topic}</p>
-            </li>
-          ))}
-        </ul>
-        
-      </div>
 
     </div>
   );

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import courses from "../../data/Courses";
 import { CourseCard } from "./CourseCard";
+import { ArrowBack } from "../../icons/Icons";
+import { Link } from "react-router-dom";
 
 export const CourseList = () => {
 
@@ -27,10 +29,18 @@ export const CourseList = () => {
 
   return (
 
-
-    <section className="course-list">
+    <>
       
-      <h2>Mis <span>Cursos</span></h2>
+      <nav className="course-list-nav">
+        <h2>Mis <span>Cursos</span></h2>
+
+        <Link to="/" className="link-back">
+          <ArrowBack />       
+          volver
+        </Link>
+
+      </nav>
+
       <div className="course-container">
         {courseList.map(course => (
           <CourseCard key={course.id} course={course} onShowCerti={setSelectedCerti} />
@@ -46,7 +56,7 @@ export const CourseList = () => {
         </div>
       )}
 
-    </section>
+    </>
   );
   
 }

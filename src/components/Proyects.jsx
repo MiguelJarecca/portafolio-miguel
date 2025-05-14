@@ -1,5 +1,5 @@
 
-import { CssIcon, HtmlIcon, JavaIcon, JavascriptIcon, ReactIcon, MysqlIcon, SpringSecurity } from '../icons/SkillsIcons';
+import { CssIcon, HtmlIcon, JavaIcon, JavascriptIcon, ReactIcon, MysqlIcon, ReduxIcon, SpringSecurityIcon, SpringBootIcon } from '../icons/SkillsIcons';
 
 export default function Proyects() {
   return (
@@ -26,12 +26,17 @@ export default function Proyects() {
                 </div>
 
                 <div className="technologies-icons icons-1">
+                  <ReduxIcon />
+                  <p>Redux</p>
+                </div>
+
+                <div className="technologies-icons icons-1">
                   <JavaIcon />
                   <p>Java</p>
                 </div>
 
                 <div className="technologies-icons icons-1">
-                  <SpringSecurity />
+                  <SpringSecurityIcon />
                   <p>Spring Security</p>
                 </div>
 
@@ -42,7 +47,7 @@ export default function Proyects() {
                 
               </div>
               <a 
-                href="https://github.com/MiguelJarecca/App-cole-uniform.git" 
+                href="https://github.com/migueljarecca/escolar-plus.git" 
                 className='proyects-link'
                 target="_blank"
                 rel="noopener noreferrer"
@@ -74,13 +79,18 @@ export default function Proyects() {
                 </div>
 
                 <div className="technologies-icons icons-2">
-                  <SpringSecurity />
+                  <SpringSecurityIcon />
                   <p>Spring Security</p>
+                </div>
+
+                <div className="technologies-icons icons-2">
+                  <SpringBootIcon />
+                  <p>Spring Boot</p>
                 </div>
                 
               </div>
               <a 
-                href="https://github.com/MiguelJarecca/Login-Authentication.git" 
+                href="https://github.com/migueljarecca/login-authentication.git" 
                 className='proyects-link'
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,7 +127,7 @@ export default function Proyects() {
                 
               </div>
               <a 
-                href="https://github.com/MiguelJarecca/light-dark-toggle.git" 
+                href="https://github.com/migueljarecca/light-dark-toggle.git" 
                 className='proyects-link'
                 target="_blank"
                 rel="noopener noreferrer"
