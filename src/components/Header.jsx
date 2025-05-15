@@ -98,11 +98,11 @@ export default function Header() {
             <a href="#contact" onClick={handleSectionClick} >Contactame</a>
           </nav>      
         
-          <div className="theme-toggle" onClick={handleThemeClick}>
+          <div className="theme-toggle" id='theme-icon' onClick={handleThemeClick}>
             {(theme === 'light') ? <Moon /> : <Sunny />}
           </div>
 
-          <div className="menu-toggle" onClick={handleMenuClick}>
+          <div className="menu-toggle" id='menu-icon' onClick={handleMenuClick}>
             {menuOpen ? <Menu /> : <Close />}
           </div>
           
