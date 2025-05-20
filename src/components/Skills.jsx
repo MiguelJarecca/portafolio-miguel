@@ -1,13 +1,53 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 import { frontendSkills, backendSkills, otherSkills } from '../data/skills'
 
+
 export default function Skills() {
- // Función para determinar si el hexágono está en fila par (desplazada)
+
+const [columns, setColumns] = useState(6);
+
+  useEffect(() => {
+
+    const updateColumns = () => {
+      const screenWidth = Math.floor(window.innerWidth);
+
+    console.log('width ' + screenWidth);
+
+      if (screenWidth > 1200) {
+        setColumns(6);
+        
+      } else if (screenWidth <= 1200 && screenWidth > 800) {
+        setColumns(6);
+            console.log('dentro aqui 900 ' + screenWidth);
+
+      } else if (screenWidth <= 800 && screenWidth > 660) {
+            console.log('dentro aqui 800 ' + screenWidth);
+
+        setColumns(5);
+      // } else if (screenWidth <= 660 && screenWidth > 630) {
+      //   setColumns(4);
+      } else if (screenWidth <= 660 && screenWidth > 480) {
+        setColumns(3);
+      } else {
+        setColumns(2);
+      }
+      
+    }
+
+    updateColumns();
+    window.addEventListener('resize', updateColumns);
+
+    return () => window.removeEventListener('resize', updateColumns);
+
+  },[]);
+
   const isEvenRow = (index) => {
-    const row = Math.floor(index / 4); // 3 hexágonos por fila (ajusta según necesidad)
+    const row = Math.floor(index / 4);
     return row % 2 !== 0;
   };
+
+  console.log('columns ' + columns);
 
   return (
                        
@@ -66,7 +106,7 @@ export default function Skills() {
 
         <div className="skills-grid others">
         {otherSkills.map(({ name, Icon }, i) => (
-          <div className={`hex-wrapper ${Math.floor(i / 6) % 2 === 1 ? 'offset' : ''}`} key={name}>
+          <div className={`hex-wrapper ${Math.floor(i / columns) % 2 === 1 ? 'offset' : ''}`} key={name}>
             <div className="hex-border"></div>
             <div className="hex">
               <div className="hex-content">
