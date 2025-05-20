@@ -103,7 +103,7 @@ export default function Header() {
           </div>
 
           <div className="menu-toggle" id='menu-icon' onClick={handleMenuClick}>
-            {menuOpen ? <Menu /> : <Close />}
+            {menuOpen ? <Close /> : <Menu />}
           </div>
           
         </div>
