@@ -189,10 +189,6 @@ html {
   overflow-x: hidden;
 }
 
-body {
- 
-}
-
 .heading {
   margin: 0;
   font-size: 4.5rem;
@@ -287,8 +283,7 @@ span {
 }
 
 #menu-icon {
-  font-size: 2.7rem;
-  background: var(--bg-primary);
+  font-size: 3.5rem;
   cursor: pointer;
   color: var(--color-primary);
 
@@ -299,7 +294,7 @@ span {
 /* ============================================================ */
 
 .home {
-  /* background-image: url(/images/bg-pattern.png); */
+  background-image: url(/images/bg-pattern.png);
   background-color: var(--bg-primary);
   background-blend-mode: multiply;
 
@@ -647,15 +642,12 @@ span {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(6, 120px);
-    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
 
   grid-template-rows: auto;
   padding: 2rem;
   margin-top: 4rem;
 
-  border: 1.5px solid #264de4;
   max-width: 820px;
-  /* position: relative; */
 }
 
 .hex-wrapper {
@@ -1364,12 +1356,6 @@ span {
   }
 }
 
-/* @media (max-width: 660px) {
-    .skills-grid {
-      grid-template-columns: repeat(4, 120px);
-  }
-} */
-
 @media (max-width: 660px) {
     .skills-grid {
       grid-template-columns: repeat(3, 120px);
@@ -1382,7 +1368,7 @@ span {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .skills-grid {
       grid-template-columns: repeat(2, 120px);
   }

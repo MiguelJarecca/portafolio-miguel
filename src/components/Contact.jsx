@@ -42,7 +42,6 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="linkedin-link"
             >
-              {/* <img src="/images/social-media/linkedin.png" alt="" /> */}
               <LinkedinLogo />
           </a>
 
@@ -51,7 +50,6 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="github-link"
             >
-              {/* <img src="/images/social-media/github.png" alt="" /> */}
               <GithubLogo />
           </a> 
         </div>

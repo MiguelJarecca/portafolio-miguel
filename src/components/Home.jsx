@@ -1,7 +1,4 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-
-import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import { GithubIcon, LinkedinIcon } from '../icons/SocialMedia';
 
 export default function Home() {
 
@@ -19,11 +16,13 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/migueljarecca"
                target="_blank"
                rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedinIn}/></a> 
+              <LinkedinIcon />
+            </a> 
             <a href="https://github.com/migueljarecca"
               target="_blank"
               rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub}/></a> 
+              <GithubIcon />
+            </a> 
 
           </div>   
         
