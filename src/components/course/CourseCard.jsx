@@ -1,8 +1,6 @@
-import { Check } from "../../icons/Icons";
-
 export const CourseCard = ({course, onShowCerti}) => {
 
-  const {title, subtitle, imageCourse, instructor, imageCerti, topics} = course;
+  const {title, subtitle, imageCourse, instructor, imageCerti} = course;
   // console.log('control '+ JSON.stringify(topics, null, 2))
 
   return (

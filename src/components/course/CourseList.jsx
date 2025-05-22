@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import courses from "../../data/Courses";
+import courses from "../../data/courses";
 import { CourseCard } from "./CourseCard";
 import { ArrowBack } from "../../icons/Icons";
 import { Link } from "react-router-dom";
