@@ -2,7 +2,7 @@
 export async function sendEmail({name, email, message}) {
 
     try {
-        const res = await fetch("https://portafolio-miguel-cyan.vercel.app/api/sendEmail", {
+        const res = await fetch("/api/sendEmail", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({name, email, message}), 

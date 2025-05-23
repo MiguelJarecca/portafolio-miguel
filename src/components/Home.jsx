@@ -26,7 +26,7 @@ export default function Home() {
 
           </div>   
         
-            <a href="/portafolio-miguel/MIGUEL-CV.pdf" download="MIGUEL-CV.pdf" className='btn-cv'>
+            <a href="/portafolio-miguel/miguel-cv.pdf" download="miguel-cv.pdf" className='btn-cv'>
               Desargar CV
             </a>
           
