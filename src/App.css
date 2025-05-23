@@ -871,7 +871,7 @@ span {
   max-width: 100%;
   padding: 6rem;
   background: var(--bg-secondary);
-  text-align: center;
+  text-align: left;
   border-radius: 3px;
 
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
@@ -901,9 +901,13 @@ span {
 
 .input-box input:focus + .form-label,
 .input-box input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-12px) scale(1);
+  transform: translateY(-15px) scale(1);
   transform-origin: left top;
   color: #2496ED;
+}
+
+.input-box input:focus {
+    border-bottom: 1px solid #2496ED;
 }
 
 .input-box .form-label {
@@ -917,23 +921,12 @@ span {
   transition: transform .5s, color .3s;
 }
 
-.input-box .form-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #2496ED;
-
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform .3s;
+.form-container .input-box .form-error {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-error);
+  font-weight: 400;
 }
-
-.input-box input:focus ~ .form-line,
-.input-box input:not(:placeholder-shown) ~ .form-line {
-  transform: scale(1);
-}  
 
 .form-container .form-button {
   font-size: 1.6rem;
@@ -955,6 +948,16 @@ span {
 .form-container .form-button:hover {
   background: #f60;
   transform: scale(1.05);
+}
+
+.form-container .success-message {
+  font-size: 1.2rem;
+  color: var(--color-success);
+}
+
+.form-container .error-message {
+  font-size: 1.2rem;
+  color: var(--color-error);
 }
 
 /* Footer */

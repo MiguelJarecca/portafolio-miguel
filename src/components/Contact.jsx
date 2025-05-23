@@ -1,32 +1,82 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { LinkedinLogo, GithubLogo } from '../icons/SocialMedia';
+import { validateForm } from '../utils/validateForm';
+import { sendEmail } from '../services/emailService';
 
 
 const initialForm = {
   name: '',
   email: '',
-  textarea: '',
+  message: '',
+}
+
+const initialFormErrors = {
+  name: '',
+  email: '',
+  message: '',
 }
 
 export default function Contact() {
 
   const [userForm, setUserForm] = useState(initialForm);
+  const [formErrors, setFormErros] = useState(initialFormErrors);
 
-  const {name, email, textarea} = userForm;
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const {name, email, message} = userForm;
 
   const onInputUserForm = ({target}) => {
     const {name, value} = target;
     setUserForm({
       ...userForm,
       [name]: value,
-    })
+    });
+
+    setFormErros({
+      ...initialFormErrors,
+      [name]: ''
+    });
   };
 
-  const onSubmitUserForm = (event) => {
+  const onSubmitUserForm = async (event) => {
 
     event.preventDefault();
+
+    const errors = validateForm(userForm);
+
+    if (Object.keys(errors).length > 0) {
+      console.log("Errores del formulario:", errors);
+      setFormErros(errors);
+      return;
+    }
+
+    try {
+      
+      setIsLoading(true);
+
+      const result = await sendEmail(userForm);
+
+      if (result.success) {
+        console.log("mensaje: " + result.data);
+        setSubmitStatus({success: true, email: "¡Email enviado con éxito!"});
+        setUserForm(initialForm);
+      } else {
+        console.error("Error al enviar email:", result.error);
+        setSubmitStatus({success: false, email: "Error al enviar"});
+      }
+
+      setTimeout(() => {setSubmitStatus(null)}, 4000);
+
+    } catch (error) {
+      console.log("Error inesperado: " + error)
+      setSubmitStatus({success: false, email: "Error inesperado"});
+      setTimeout(() => {setSubmitStatus(null)}, 4000);
+
+    } finally {
+      setIsLoading(false);
+    }
     
-    console.log(JSON.stringify(userForm, null, 2));
   }
 
   return (
@@ -59,53 +109,67 @@ export default function Contact() {
 
           <div className="form-container">
             <div className="input-box">
-                <input 
-                  type="text" 
-                  id='name' 
-                  placeholder=' '
-                  name='name'
-                  value={name}
-                  onChange={onInputUserForm}
+              <input 
+                type="text" 
+                id='name' 
+                placeholder=' '
+                name='name'
+                value={name}
+                onChange={onInputUserForm}
+              />
+
+              <label className='form-label' htmlFor="name">Nombre:</label>
+              {formErrors.name && <p className='form-error'>{formErrors.name}</p>}
+
+            </div>
+
+
+            <div className="input-box">
+              <input 
+                type="email" 
+                id='email' 
+                placeholder=' '
+                name='email'
+                value={email} 
+                onChange={onInputUserForm}
                 />
 
-                <label className='form-label' htmlFor="name">Nombre:</label>
-                <span className='form-line'></span>
-              </div>
+              <label className='form-label' htmlFor="email">Correo Electrónico:</label>
+              {formErrors.email && <p className='form-error'>{formErrors.email}</p>}
 
-              <div className="input-box">
-                <input 
-                  type="email" 
-                  id='email' 
-                  placeholder=' '
-                  name='email'
-                  value={email} 
-                  onChange={onInputUserForm}
-                  />
-
-                <label className='form-label' htmlFor="email">Correo Electrónico:</label>
-                <span className='form-line'></span>
-              </div>        
+            </div>        
 
             <div className="input-box">
               <input 
                 type="text"
                 id='textarea'
                 placeholder=' '
-                name='textarea'
-                value={textarea}
+                name='message'
+                value={message}
                 onChange={onInputUserForm}
 
                 />
+
               <label className='form-label' htmlFor="textarea">Mensaje:</label>
-              <span className='form-line'></span>
+              {formErrors.message && <p className='form-error'>{formErrors.message}</p>}
+
             </div>
 
             <button 
               type='submit'
-                className='form-button'
+              className='form-button'
+              disabled={isLoading}
               >
-                Enviar
+              
+              {isLoading ? 'Enviando...' : 'Enviar'}
             </button>
+
+            {submitStatus && (
+              <p 
+                className={setSubmitStatus.success ? 'success-message' : 'error-message'}
+                >
+              {submitStatus.email}</p>
+            )}
           </div>
             
         </form>
