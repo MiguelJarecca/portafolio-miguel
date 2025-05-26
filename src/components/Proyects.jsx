@@ -10,7 +10,7 @@ export default function Proyects() {
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/escolar-plus.png" alt="Polo de uniforme escolar del proyecto Escolar Plus" />
+              <img src="/images/proyects/escolar-plus.webp" alt="Polo de uniforme escolar del proyecto Escolar Plus" />
             </div>
             <div className="card-body">
               <h3 className= "card-title">Escolar Plus</h3>
@@ -57,7 +57,7 @@ export default function Proyects() {
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/login.png" alt="Pantalla de inicio de sesión del proyecto Login Authentication" />
+              <img src="/images/proyects/login.webp" alt="Pantalla de inicio de sesión del proyecto Login Authentication" />
             </div>
             <div className="card-body">
               <h3 className= "card-title">Login Autenticación</h3>
@@ -100,7 +100,7 @@ export default function Proyects() {
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/dark-mode.png" alt="Intenfaz del proyecto que alteerna entre modo claro y oscuro" />
+              <img src="/images/proyects/dark-mode.webp" alt="Intenfaz del proyecto que alteerna entre modo claro y oscuro" />
             </div>
             <div className="card-body">
               <h3 className= "card-title">Modo Claro - Oscuro</h3>

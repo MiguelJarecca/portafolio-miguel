@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ArrowUp } from '../icons/Icons';
 
 export default function Footer() {

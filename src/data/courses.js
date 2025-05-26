@@ -7,7 +7,7 @@ const courses = [
     subtitle: "Learn & Develop Microservices with Java, Spring Boot, Spring Cloud, Docker, Kubernetes, Helm, Microservices Security",
     imageCourse: "/images/courses/course-microservices.png",
     instructor: "Eazy Bytes, Madan Reddy",
-    imageCerti: "/images/courses/certi-microservices.jpg",
+    imageCerti: "/images/courses/certi-microservices.webp",
     topics: [
       "Qué es la arquitectura de microservicios y en qué se diferencia de la arquitectura monolítica y SOA",
       "Cómo construir microservicios listos para producción usando Java, Spring, Spring Boot y Spring Cloud",
@@ -28,7 +28,7 @@ const courses = [
     subtitle: "Construye aplicaciones web Fullstack con React 18 Frontend y Spring Boot 3 Backend RESTful, JPA, JWT, Hooks, Redux, AWS",
     imageCourse: "/images/courses/course-react-app-full-stack.png",
     instructor: "Andrés Guzmán",
-    imageCerti: "/images/courses/certi-react-app-full-stack.jpg",
+    imageCerti: "/images/courses/certi-react-app-full-stack.webp",
     topics: [
       "Aprende todo lo necesario para trabajar con React desde cero siguiendo las mejores prácticas",
       "Aprende JavaScript moderno con ECMAScript",
@@ -47,7 +47,7 @@ const courses = [
     subtitle: "",
     imageCourse: "/images/courses/course-egg-full-stack.png",
     instructor: "Egg",
-    imageCerti: "/images/courses/certi-full-stack.jpeg",
+    imageCerti: "/images/courses/certi-full-stack.webp",
     topics: [
       "Aprende todo lo necesario para trabajar con React desde cero siguiendo las mejores prácticas",
       "Aprende JavaScript moderno con ECMAScript",
@@ -66,7 +66,7 @@ const courses = [
     subtitle: "",
     imageCourse: "/images/courses/course-egg.png",
     instructor: "Egg",
-    imageCerti: "/images/courses/certi-prog-desde-cero.jpeg",
+    imageCerti: "/images/courses/certi-prog-desde-cero.webp",
     topics: [
       "Fundamentos de la Programación",
       "Lógica Algorítmica",

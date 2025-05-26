@@ -1,7 +1,6 @@
 export const CourseCard = ({course, onShowCerti}) => {
 
   const {title, subtitle, imageCourse, instructor, imageCerti} = course;
-  // console.log('control '+ JSON.stringify(topics, null, 2))
 
   return (
     <div className="course-card">

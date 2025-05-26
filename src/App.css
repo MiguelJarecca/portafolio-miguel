@@ -350,12 +350,17 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  aspect-ratio: 1 / 1;
+  max-width: 40rem;
+  width: 100%;
+  height: auto;
 }
 
 .picture-container img {
-  max-width: 100%;
-  width: 40rem;
+  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* About */
@@ -373,12 +378,26 @@ html {
   align-items: center;
   gap: 4rem;
   margin-top: 2rem;
+
+}
+
+.about-img {
+  max-width: 20vw;
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 20 / 21;
 }
 
 .about-img img {
-  width: 25vw;
-  box-shadow: 0 .1rem .5rem var(--shadow-color);
-  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-content {
+  width: 100%;
+  height: auto;
 }
 
 .about-content h3 {
@@ -397,6 +416,7 @@ html {
 
 .about-content p span {
   font-weight: 500;
+  color: var(--color-accent);
 }
 
 .about-content .about-link {
@@ -456,10 +476,13 @@ html {
   width: 100%;
   height: auto;
   overflow: hidden;
+
+  aspect-ratio: 44 / 23;
 }
 
 .proyects-container .proyects-card .div-img img {
   width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -480,6 +503,7 @@ html {
   font-size: 1.4rem;
   color: var(--color-text-secondary);
   font-weight: 400;
+  line-height: 1.7;
 }
 
 .card-body .technologies {
@@ -1313,9 +1337,8 @@ html {
     text-align: center;
   }
 
-  .about-img img {
-    width: 45vw;
-    margin-top: 2rem;
+  .about-img {
+    width: 40vw;
   }
 
   .contact .contact-container {

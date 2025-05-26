@@ -1,10 +1,9 @@
-import React from 'react'
-
-import imgPerfil from "../img/miguelJC.jpg"
+import imgPerfil from "../img/miguelJC.webp"
 
 import { Link } from 'react-router-dom';
 
 export default function About() {
+
   return (
     <section className='about' id='about'>
 
@@ -12,12 +11,12 @@ export default function About() {
 
       <div className="about-container">
         <div className="about-img">
-          <img src={imgPerfil} alt="Foto de Miguel Jarecca Ccallo" />
+          <img src={imgPerfil} alt="Foto de Miguel Jarecca Ccallo"/>
         </div>
 
         <div className="about-content">
    
-          <p>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
+          <p style={{ border: '1px solid red' }}>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
             Trabajo con <span>React, Java (Spring Boot) y MySQL</span>. 
             
           </p>
@@ -30,9 +29,10 @@ export default function About() {
           <div className="about-link">
               <Link to={'/courses'}>Mis Cursos</Link>
           </div>
-      </div>
+
+        </div>
         
-    </div>
-  </section>
+      </div>
+    </section>
   )
 }
