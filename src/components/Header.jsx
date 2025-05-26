@@ -84,8 +84,8 @@ export default function Header() {
       {/* Barra de navegación */}
       <header className='header'>
 
-        <a href="/" className='logo'>
-          <img src="/logo.png" alt="logo"/>
+        <a href="/" className='logo' aria-label='Ir a inicio'>
+          <img src="/logo.png" alt="Miguel Jarecca"/>
         </a>
 
         <div className='header-div'>
@@ -95,7 +95,7 @@ export default function Header() {
             <a href="#about" onClick={handleSectionClick} >Sobre mí</a>
             <a href="#proyects" onClick={handleSectionClick} >Proyectos</a>
             <a href="#skills" onClick={handleSectionClick} >Habilidades</a>
-            <a href="#contact" onClick={handleSectionClick} >Contactame</a>
+            <a href="#contact" onClick={handleSectionClick} >Contáctame</a>
           </nav>      
         
           <div className="theme-toggle" id='theme-icon' onClick={handleThemeClick}>

@@ -15,26 +15,30 @@ export default function Home() {
     
             <a href="https://www.linkedin.com/in/migueljarecca"
                target="_blank"
-               rel="noopener noreferrer">
+               rel="noopener noreferrer"
+              aria-label='Ir a mi perfil de LinkedIn'   
+            >
               <LinkedinIcon />
-            </a> 
+            </a>
+
             <a href="https://github.com/migueljarecca"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              aria-label='Ir a mi repositorio de GitHub'
+            >
               <GithubIcon />
             </a> 
 
           </div>   
         
-            <a href="/portafolio-miguel/miguel-cv.pdf" download="miguel-cv.pdf" className='btn-cv'>
+            <a href="/miguel-cv.pdf" download="miguel-cv.pdf" className='btn-cv'>
               Desargar CV
             </a>
           
       </div>
 
       <picture className="picture-container">
-        <img src="/images/designer.svg" alt="" />
-        {/* <img src="/images/vector.jpg" alt="" /> */}
+        <img src="/images/designer.svg" alt="Ilustración de diseñador trabajando en una computadora" />
       </picture>
     </main>
   )

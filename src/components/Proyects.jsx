@@ -8,14 +8,12 @@ export default function Proyects() {
 
       <div className='proyects-container'>
 
-        {/* <div className="proyects-grid"> */}
-
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/escolar-plus.png" alt="" />
+              <img src="/images/proyects/escolar-plus.png" alt="Polo de uniforme escolar del proyecto Escolar Plus" />
             </div>
             <div className="card-body">
-              <h5 className= "card-title">Escolar Plus</h5>
+              <h3 className= "card-title">Escolar Plus</h3>
               <p className='card-text'>Aplicación web de e-commerce especializada en la venta de uniformes escolares.
                 Permite a los usuarios navegar por categorías, agregar productos al carrito y a favoritos.</p>
               <div className="technologies">
@@ -59,10 +57,10 @@ export default function Proyects() {
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/login.png" alt="" />
+              <img src="/images/proyects/login.png" alt="Pantalla de inicio de sesión del proyecto Login Authentication" />
             </div>
             <div className="card-body">
-              <h5 className= "card-title">Login Autenticación</h5>
+              <h3 className= "card-title">Login Autenticación</h3>
               <p className='card-text'>API REST segura para gestión de usuarios, con autenticación y autorización 
                 mediante JWT. Desarrollada con Spring Boot y Spring Security.
               </p>
@@ -102,10 +100,10 @@ export default function Proyects() {
 
           <div className="proyects-card">
             <div className="div-img">
-              <img src="/images/proyects/dark-mode.png" alt="" />
+              <img src="/images/proyects/dark-mode.png" alt="Intenfaz del proyecto que alteerna entre modo claro y oscuro" />
             </div>
             <div className="card-body">
-              <h5 className= "card-title">Modo Claro - Oscuro</h5>
+              <h3 className= "card-title">Modo Claro - Oscuro</h3>
               <p className='card-text'>Un proyecto simple que alterna entre el modo claro y oscuro. 
                 Haciendo clic en el botón para cambiar instantáneamente.</p>
               <div className="technologies">
@@ -136,8 +134,6 @@ export default function Proyects() {
               </a>
             </div>
           </div>
-
-          {/* </div> */}
 
         </div>
 

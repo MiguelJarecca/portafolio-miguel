@@ -17,7 +17,12 @@ export default function Footer() {
             <p>Miguel Jarecca Ccallo | {new Date().getFullYear()}</p>
         </div>
 
-        <button type="button" className='footer-button' onClick={handleScrollToTop}>
+        <button 
+            type="button" 
+            className='footer-button' 
+            onClick={handleScrollToTop}
+            aria-label='Volver arriba'
+        >
             <ArrowUp />
         </button>
     </footer>

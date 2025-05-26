@@ -66,12 +66,12 @@ export default function Contact() {
         setSubmitStatus({success: false, email: "Error al enviar"});
       }
 
-      setTimeout(() => {setSubmitStatus(null)}, 4000);
+      setTimeout(() => {setSubmitStatus(null)}, 5000);
 
     } catch (error) {
       console.log("Error inesperado: " + error)
       setSubmitStatus({success: false, email: "Error inesperado"});
-      setTimeout(() => {setSubmitStatus(null)}, 4000);
+      setTimeout(() => {setSubmitStatus(null)}, 5000);
 
     } finally {
       setIsLoading(false);
@@ -91,6 +91,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="linkedin-link"
+            aria-label='Ir a mi LinkedIn'
             >
               <LinkedinLogo />
           </a>
@@ -99,7 +100,8 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="github-link"
-            >
+            aria-label='Ir a mi GitHub'
+          >
               <GithubLogo />
           </a> 
         </div>
@@ -166,7 +168,7 @@ export default function Contact() {
 
             {submitStatus && (
               <p 
-                className={setSubmitStatus.success ? 'success-message' : 'error-message'}
+                className={submitStatus.success ? 'success-message' : 'error-message'}
                 >
               {submitStatus.email}</p>
             )}

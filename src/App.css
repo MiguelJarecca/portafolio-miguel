@@ -3,24 +3,6 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-Thin.woff2') format('woff2'),
-        url('/fonts/Poppins/Poppins-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-ExtraLight.woff2') format('woff2'),
-        url('/fonts/Poppins/Poppins-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
     src: url('/fonts/Poppins/Poppins-Light.woff2') format('woff2'),
         url('/fonts/Poppins/Poppins-Light.woff') format('woff');
     font-weight: 300;
@@ -64,24 +46,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-ExtraBold.woff2') format('woff2'),
-        url('/fonts/Poppins/Poppins-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins/Poppins-Black.woff2') format('woff2'),
-        url('/fonts/Poppins/Poppins-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
 /**/
 
 * {
@@ -106,7 +70,7 @@
   --bg-card-tag: #eff0f3;
 
   --color-primary: #0d0d0d;
-  --color-secondary: #6b7280;
+  --color-secondary: #505050;
   --color-accent: #f60;
 
   --color-error: #ef4444;
@@ -197,7 +161,7 @@ html {
   font-weight: 600;
 }
 
-span {
+.heading span {
   color: var(--color-accent);
 }
 
@@ -800,11 +764,11 @@ span {
 }
 
 .skills-category .others > .hex-wrapper:nth-child(5) svg {
-  color: #181717; 
+  color: #000;
 }
 
 .skills-category .others > .hex-wrapper:nth-child(6) svg {
-  color: #181717 
+  color: #000; 
 }
 
 .skills-category .others > .hex-wrapper:nth-child(7) svg {
