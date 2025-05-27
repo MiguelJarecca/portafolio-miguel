@@ -16,7 +16,7 @@ export default function About() {
 
         <div className="about-content">
    
-          <p style={{ border: '1px solid red' }}>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
+          <p>Soy Miguel Jarecca Ccallo, desarrollador Fullstack con enfoque en aplicaciones web escalables. 
             Trabajo con <span>React, Java (Spring Boot) y MySQL</span>. 
             
           </p>

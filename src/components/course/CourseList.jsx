@@ -51,7 +51,7 @@ export const CourseList = () => {
         <div className="modal" onClick={() => setSelectedCerti(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <span className="close" onClick={() => setSelectedCerti(null)}>&times;</span>
-            <img src={selectedCerti} alt="Certificado" className="certi-image" />
+            <img src={selectedCerti} alt="Certificado" className="certi-image"  loading="lazy"/>
           </div>
         </div>
       )}
