@@ -5,7 +5,7 @@ const courses = [
     id: 1,
     title: "Master Microservices with SpringBoot,Docker,Kubernetes",
     subtitle: "Learn & Develop Microservices with Java, Spring Boot, Spring Cloud, Docker, Kubernetes, Helm, Microservices Security",
-    imageCourse: "/images/courses/course-microservices.png",
+    imageCourse: "/images/courses/course-microservices.webp",
     instructor: "Eazy Bytes, Madan Reddy",
     imageCerti: "/images/courses/certi-microservices.webp",
     topics: [
@@ -26,7 +26,7 @@ const courses = [
     id: 2,
     title: "React & Spring Boot: Creando Webapp Full Stack",
     subtitle: "Construye aplicaciones web Fullstack con React 18 Frontend y Spring Boot 3 Backend RESTful, JPA, JWT, Hooks, Redux, AWS",
-    imageCourse: "/images/courses/course-react-app-full-stack.png",
+    imageCourse: "/images/courses/course-react-app-full-stack.webp",
     instructor: "Andrés Guzmán",
     imageCerti: "/images/courses/certi-react-app-full-stack.webp",
     topics: [
@@ -45,7 +45,7 @@ const courses = [
     id: 3,
     title: "Programación Web Full Stack",
     subtitle: "",
-    imageCourse: "/images/courses/course-egg-full-stack.png",
+    imageCourse: "/images/courses/course-full-stack.webp",
     instructor: "Egg",
     imageCerti: "/images/courses/certi-full-stack.webp",
     topics: [
@@ -64,7 +64,7 @@ const courses = [
     id: 4,
     title: "Programación desde Cero Latam",
     subtitle: "",
-    imageCourse: "/images/courses/course-egg.png",
+    imageCourse: "/images/courses/course-prog-desde-cero.webp",
     instructor: "Egg",
     imageCerti: "/images/courses/certi-prog-desde-cero.webp",
     topics: [

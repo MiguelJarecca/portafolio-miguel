@@ -5,7 +5,9 @@ export const CourseCard = ({course, onShowCerti}) => {
   return (
     <div className="course-card">
 
-        <img src={imageCourse} alt={title} className="course-image" />
+        <div className="image-wrapper">
+          <img src={imageCourse} alt={title} className="course-image" />
+        </div>
 
         <div className="course-info">
           <h3 className="course-title">{title}</h3>

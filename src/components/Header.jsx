@@ -85,7 +85,7 @@ export default function Header() {
       <header className='header'>
 
         <a href="/" className='logo' aria-label='Ir a inicio'>
-          <img src="/logo.png" alt="Miguel Jarecca"/>
+          <img src="/logo.webp" alt="Miguel Jarecca"/>
         </a>
 
         <div className='header-div'>

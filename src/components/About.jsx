@@ -11,7 +11,7 @@ export default function About() {
 
       <div className="about-container">
         <div className="about-img">
-          <img src={imgPerfil} alt="Foto de Miguel Jarecca Ccallo"/>
+          <img src={imgPerfil} alt="Foto de Miguel Jarecca Ccallo" loading="lazy"/>
         </div>
 
         <div className="about-content">
