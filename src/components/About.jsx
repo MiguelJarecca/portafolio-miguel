@@ -21,7 +21,7 @@ export default function About() {
             
           </p>
 
-          <p>Recientemente profundicé en arquitectura de <span>microservicios</span>, usando herramientas como Spring Cloud, 
+          <p>También profundicé en arquitectura de <span>microservicios</span>, usando herramientas como Spring Cloud, 
             Docker, Kubernetes, RabbitMQ, Kafka, Prometheus, Grafana y OAuth2, enfocandome en el desarrollo 
             de sistemas distribuidos, resilientes, escalables y seguros.
           </p>
