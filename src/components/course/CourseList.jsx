@@ -32,7 +32,7 @@ export const CourseList = () => {
     <>
       
       <nav className="course-list-nav">
-        <h2>Mis <span>Cursos</span></h2>
+        <h2 className="heading">Mis <span>Cursos</span></h2>
 
         <Link to="/" className="link-back">
           <ArrowBack />       

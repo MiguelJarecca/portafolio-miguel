@@ -37,9 +37,9 @@ export default function Home() {
           
       </div>
 
-      <picture className="picture-container">
+      <div className="picture-container">
         <img src="/images/designer.svg" alt="Ilustración de diseñador trabajando en una computadora" />
-      </picture>
+      </div>
     </main>
   )
 }
