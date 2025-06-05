@@ -56,7 +56,7 @@ body {
 
   --color-primary: #0d0d0d;
   --color-secondary: #505050;
-  --color-accent: #f60;
+  --color-accent: #ff6600;
 
   --color-error: #ef4444;
   --color-success: #10b981;
@@ -69,22 +69,22 @@ body {
   --button-primary-text: #fffffe;
   --button-primary-border: #0d0d0d;
 
-  --button-primary-bg-hover: #f60;
+  --button-primary-bg-hover: #ff6600;
   --button-primary-text-hover: #fffffe;
-  --button-primary-border-hover: #f60;
+  --button-primary-border-hover: #ff6600;
 
   --button-secondary-bg: #fffffe;
-  --button-secondary-text: #f60;
-  --button-secondary-border: #f60;
+  --button-secondary-text: #ff6600;
+  --button-secondary-border: #ff6600;
 
-  --button-secondary-bg-hover: #f60;
+  --button-secondary-bg-hover: #ff6600;
   --button-secondary-text-hover: #fffffe;
-  --button-secondary-border-hover: #f60;
+  --button-secondary-border-hover: #ff6600;
 
   --icon-socials-bg: #eff0f3;
-  --icon-socials-svg-color: #f60;
+  --icon-socials-svg-color: #ff6600;
 
-  --icon-socials-bg-hover: #f60;
+  --icon-socials-bg-hover: #ff6600;
   --icon-socials-svg-color-hover: #fffffe;
 }
 
@@ -100,7 +100,7 @@ body {
 
   --color-primary: #fffffe;
   --color-secondary: #94a1b2;
-  --color-accent: #f60;
+  --color-accent: #ff6600;
 
   --color-error: #ef4444;
   --color-success: #10b981;
@@ -109,26 +109,26 @@ body {
   --color-text-secondary: #94a1b2;
   --color-text-inverted: #cacddc;
 
-  --button-primary-bg: #f60;
+  --button-primary-bg: #ff6600;
   --button-primary-text: #fffffe;
-  --button-primary-border: #f60;
+  --button-primary-border: #ff6600;
 
-  --button-primary-bg-hover: #f60;
+  --button-primary-bg-hover: #ff6600;
   --button-primary-text-hover: #fffffe;
-  --button-primary-border-hover: #f60;
+  --button-primary-border-hover: #ff6600;
 
   --button-secondary-bg: #242629;
-  --button-secondary-text: #f60;
-  --button-secondary-border: #f60;
+  --button-secondary-text: #ff6600;
+  --button-secondary-border: #ff6600;
 
-  --button-secondary-bg-hover: #f60;
+  --button-secondary-bg-hover: #ff6600;
   --button-secondary-text-hover: #fffffe;
-  --button-secondary-border-hover: #f60;
+  --button-secondary-border-hover: #ff6600;
 
   --icon-socials-bg: #0f0e17;
-  --icon-socials-svg-color: #f60;
+  --icon-socials-svg-color: #ff6600;
 
-  --icon-socials-bg-hover: #f60;
+  --icon-socials-bg-hover: #ff6600;
   --icon-socials-svg-color-hover: #fffffe;
 
 }
@@ -162,7 +162,7 @@ html {
 .hero h3 {
   font-size: 1.6rem;
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Navbar */
@@ -222,7 +222,7 @@ html {
   bottom: -6px;
   width: 100%;
   height: 0.3rem;
-  background: #f60;
+  background: #ff6600;
 }
 
 #theme-icon {
@@ -290,7 +290,7 @@ html {
   align-items: center;
   width: 4.5rem;
   height: 4.5rem;
-  border: .2rem solid #f60;
+  border: .2rem solid #ff6600;
   border-radius: 50%;
   box-shadow: 0 .2rem .5rem #000;
   font-size: 2rem;
@@ -511,7 +511,7 @@ html {
   padding: 1rem;
   text-align: center;
   color: #fff;
-  background: #f60;
+  background: #ff6600;
   font-size: 1.6rem;
   letter-spacing: .1rem;
   font-weight: 400;
@@ -604,7 +604,7 @@ html {
   color: var(--color-text-primary); 
   font-size: 1.9rem;
   font-weight: 500;
-  border-left: 5px solid #f60;
+  border-left: 5px solid #ff6600;
   padding-left: 15px;
 }
 
@@ -909,7 +909,7 @@ html {
 }
 
 .form-container .form-button:hover {
-  background: #f60;
+  background: #ff6600;
   transform: scale(1.05);
 }
 
@@ -944,7 +944,7 @@ html {
   left: 12%;
   right: 12%;
   height: 3px;
-  background: #f60;
+  background: #ff6600;
 }
 
 .footer-text p {
@@ -957,7 +957,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
-  background: #f60;
+  background: #ff6600;
   border-radius: 6px;
   border: none;
   transition: transform .3s ease;
@@ -1004,7 +1004,7 @@ html {
 }
 
 .course-list-nav a:hover {
-  color: #f60;
+  color: #ff6600;
 }
 
 .main-courses-page .course-container {
